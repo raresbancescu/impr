@@ -1,16 +1,6 @@
 'use client'
 
-import {useRouter, useSearchParams} from "next/navigation";
 import {useEffect, useState} from "react";
-
-
-const CheckBoxesAndRadioButtons = ({children}) => {
-    return (
-        <div className="flex items-center hover:opacity-75">
-            {children}
-        </div>
-    );
-};
 
 const CheckBoxesAndRadioItem = ({id, label, ...props}) => {
     return (
@@ -21,82 +11,45 @@ const CheckBoxesAndRadioItem = ({id, label, ...props}) => {
     );
 };
 
-function checkValidQuery(queries) {
-    return queries.filter((query) => query !== '').length > 0;
-}
-
-
-function convertValidStringQueries(queries) {
-    let query = '';
-
-    for (let [key, value] of Object.entries(query)) {
-        query = query + `${query === '' ? '' : '&'}${key}=${value}`;
-    }
-
-    return query;
-}
-
-export function saveAllUserOptions(searchParams) {
-    let selectedQueries = {};
-    searchParams.forEach((values, key) => {
-        const queries = values.split(',');
-        if (selectedQueries[key]) {
-            selectedQueries[key].push(...queries);
-        } else {
-            selectedQueries[key] = queries;
-        }
-    });
-
-    return selectedQueries;
-}
-
-const Filters = ({filters}) => {
-    const router = useRouter();
-    const searchParams = useSearchParams();
-
-    const [selectedFilterQueries, setSelectedFilterQueries] = useState({})
-
-    const selectedFilterOptions = (event) => {
-        const name = event.target.name;
-        const value = event.target.value;
-        const filterType = event.target.type;
-
-        let selectedQueries = selectedFilterQueries;
-
-        if (selectedQueries[name]) {
-            if (filterType === 'radio') {
-                selectedQueries[name] = [value];
-            } else if (selectedQueries[name].includes(value)) {
-                selectedQueries[name] = selectedQueries[name].filter((query) => query !== value);
-
-                if (!checkValidQuery(selectedQueries[name])) {
-                    delete selectedQueries[name];
+const Filters = ({filters, onFilterChange}) => {
+    const [filtersState, setFiltersState] = useState([]);
+    const handleFilterChange = (name, value, filterType) => {
+        setFiltersState((prevState) => {
+            const updatedFilters = {...prevState};
+            if (filterType === 'checkbox') {
+                if (updatedFilters[name]) {
+                    if (updatedFilters[name].includes(value)) {
+                        updatedFilters[name] = updatedFilters[name].filter((v) => v !== value);
+                    } else {
+                        updatedFilters[name].push(value);
+                    }
+                } else {
+                    updatedFilters[name] = [value];
                 }
-            } else {
-                selectedQueries[name].push(value);
             }
-        } else if (selectedQueries) {
-            selectedQueries[name] = [value];
-        }
 
-        router.push(`/?${convertValidStringQueries(selectedQueries)}`, {scroll: false});
-    }
+            if (filterType === 'radio') {
+                if (updatedFilters[name] === value) {
+                    updatedFilters[name] = [];
+                } else {
+                    updatedFilters[name] = [value];
+                }
+            }
 
-    const isOptionChecked = (id, option) => {
-        return (
-            Boolean(selectedFilterQueries[id]) && selectedFilterQueries[id].includes(option.toLowerCase())
-        );
-    }
-
-    useEffect(() => {
-        const paramsObj = saveAllUserOptions(searchParams)
-        setSelectedFilterQueries(paramsObj);
-    }, [searchParams]);
+            onFilterChange(updatedFilters, filterType);
+            console.log(updatedFilters);
+            return updatedFilters;
+        });
+    };
 
     return (
         <div className="col-span-2 space-y-6 top-12 h-fit sticky">
             <div className="py-2 mb-8">
-                <button className="text-red-500 cursor-pointer font-semibold">
+                <button
+                    className="text-red-500 cursor-pointer font-semibold"
+                    onClick={() => {
+                        setFiltersState([]);
+                    }}>
                     Clear Filters
                 </button>
             </div>
@@ -105,19 +58,21 @@ const Filters = ({filters}) => {
                     <div key={name} className="border-b pb-4">
                         <p className="font-medium mb-4 capitalize">{label}</p>
                         <div className="space-y-2">
-                            {options.map((value) => {
+                            {options.map((value, index) => {
                                 return (
-                                    <CheckBoxesAndRadioButtons key={value}>
-                                        <CheckBoxesAndRadioItem
-                                            type={type}
-                                            name={name}
-                                            label={value}
-                                            id={value.toLowerCase().trim()}
-                                            // value={value.toLowerCase().trim()}
-                                            onChange={selectedFilterOptions}
-                                            // checked={isOptionChecked(id, value.toLowerCase())}
-                                        />
-                                    </CheckBoxesAndRadioButtons>
+                                    <div key={index} className="flex items-center hover:opacity-75">
+                                        {(type === "radio" || type === 'checkbox' ?
+                                            <CheckBoxesAndRadioItem
+                                                key={name}
+                                                type={type}
+                                                name={label}
+                                                label={value}
+                                                id={value.toLowerCase().trim()}
+                                                value={value}
+                                                onChange={() => handleFilterChange(name, value, type)}
+                                                checked={filtersState[name]?.includes(value) || false}
+                                            /> : null)}
+                                    </div>
                                 );
                             })}
                         </div>
@@ -129,4 +84,3 @@ const Filters = ({filters}) => {
 };
 
 export default Filters;
-

@@ -13,16 +13,33 @@ export default function Home() {
 
     const initialFetchFiltersAndImages = async () => {
 
-        try{
+        try {
             const response = await axios.get(`http://localhost:5000/api/initial`);
-            console.log(response.data);
             setFilters(response.data.filters);
             setImages(response.data.images);
-        } catch(e){
+        } catch (e) {
             console.error(e)
         }
     }
 
+    const updateQueryParamsAndFetch = async (updatedFilters, filterType) => {
+        const queryParams = new URLSearchParams();
+        if(filterType == "checkbox"){}
+        for (const [key, values] of Object.entries(updatedFilters)) {
+            if (filterType === 'checkbox') {
+                queryParams.set(`${key}[checkbox]`, values.join(','));
+            }
+            if (filterType === 'radio') {
+                queryParams.set(`${key}[radio]`, values.join(','));
+            }
+        }
+
+        console.log(queryParams.toString());
+    };
+
+    const handleFilterChange = async (updatedFilters, filterType) => {
+        await updateQueryParamsAndFetch(updatedFilters, filterType);
+    }
 
     useEffect(() => {
         initialFetchFiltersAndImages();
@@ -34,7 +51,7 @@ export default function Home() {
             <Navbar/>
             <div className="w-full flex flex-col md:flex-row">
                 <div className="w-full md:w-[25%] p-2">
-                    <Filters filters={filters}/>
+                    <Filters filters={filters} onFilterChange={handleFilterChange}/>
                 </div>
                 <div className="w-full md:w-[75%] p-2">
                     <ImagesGrid images={images}/>
