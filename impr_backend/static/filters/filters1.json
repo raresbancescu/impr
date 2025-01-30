@@ -1,0 +1,14 @@
+[
+  {
+    "label" : "Color",
+    "name" : "color",
+    "type": "checkbox",
+    "options" : ["red", "blue", "green", "yellow"]
+  },
+  {
+    "label" : "Gender",
+    "name": "gender",
+    "type": "radio",
+    "options" : ["man", "female", "non-binary", "other"]
+  }
+]

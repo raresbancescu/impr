@@ -3,48 +3,6 @@
 import {useRouter, useSearchParams} from "next/navigation";
 import {useEffect, useState} from "react";
 
-const categories = [
-    "Copii", "Longboard", "Adults", "Skateboard",
-    "BMX", "Mountain Bike", "Scooter",
-    "Electric Scooter", "Roller Skates", "Inline Skates"
-];
-
-const colors = [
-    "red", "blue", "green", "black", "white",
-    "yellow", "gray", "pink", "purple"
-];
-
-const sizes = [
-    "XS", "S", "M", "L", "XL", "One Size"
-];
-
-const filterableOptions = [
-    {
-        id: 'sort',
-        title: 'Sort By',
-        options: ["Price - Low to High", "Price - High to Low", "Newest", "Oldest"],
-        filterType: 'radio',
-    },
-    {
-        id: 'categories',
-        title: 'Product Categories',
-        options: categories,
-        filterType: 'checkbox',
-    },
-    {
-        id: 'colors',
-        title: 'Product Colors',
-        options: colors,
-        filterType: 'checkbox',
-    },
-    {
-        id: 'sizes',
-        title: 'Product Sizes',
-        options: sizes,
-        filterType: 'checkbox',
-    },
-];
-
 
 const CheckBoxesAndRadioButtons = ({children}) => {
     return (
@@ -92,7 +50,7 @@ export function saveAllUserOptions(searchParams) {
     return selectedQueries;
 }
 
-const Filters = () => {
+const Filters = ({filters}) => {
     const router = useRouter();
     const searchParams = useSearchParams();
 
@@ -142,22 +100,22 @@ const Filters = () => {
                     Clear Filters
                 </button>
             </div>
-            {filterableOptions.map(({id, title, options, filterType}) => {
+            {filters.map(({label, name, type, options}) => {
                 return (
-                    <div key={id} className="border-b pb-4">
-                        <p className="font-medium mb-4 capitalize">{title}</p>
+                    <div key={name} className="border-b pb-4">
+                        <p className="font-medium mb-4 capitalize">{label}</p>
                         <div className="space-y-2">
                             {options.map((value) => {
                                 return (
                                     <CheckBoxesAndRadioButtons key={value}>
                                         <CheckBoxesAndRadioItem
-                                            type={filterType}
-                                            name={id}
+                                            type={type}
+                                            name={name}
                                             label={value}
                                             id={value.toLowerCase().trim()}
-                                            value={value.toLowerCase().trim()}
+                                            // value={value.toLowerCase().trim()}
                                             onChange={selectedFilterOptions}
-                                            checked={isOptionChecked(id, value.toLowerCase())}
+                                            // checked={isOptionChecked(id, value.toLowerCase())}
                                         />
                                     </CheckBoxesAndRadioButtons>
                                 );

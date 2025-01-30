@@ -1,14 +1,13 @@
-import {products} from "@/app/imageList";
 import Image from "next/image";
 
-const ProductGrid = () => {
+const ImagesGrid = ({images}) => {
     return (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 bg-red-200">
-            {products.map((product) => (
-                <div key={product.id}>
+            {images.map((image) => (
+                <div key={image.id}>
                     <div className="relative">
                         <div className="w-full h-full">
-                            <img className="rounded-md shadow-sm aspect-[4/5] w-full h-full" src={product.imageUrl} alt={product.title} />
+                            <img className="rounded-md shadow-sm aspect-[4/5] w-full h-full" src={image.imageUrl} alt={image.title} />
                         </div>
                     </div>
                 </div>
@@ -17,4 +16,4 @@ const ProductGrid = () => {
     )
 }
 
-export default ProductGrid;
+export default ImagesGrid;
