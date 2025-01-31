@@ -1,3 +1,32 @@
-{
-
-}
+[
+  {
+    "label": "Gender",
+    "name": "gender",
+    "type": "radio",
+    "options": [
+      {
+        "label": "Man",
+        "value": "man"
+      },
+      {
+        "label": "Female",
+        "value": "female"
+      },
+      {
+        "label": "Non-binary",
+        "value": "non-binary"
+      },
+      {
+        "label": "Other",
+        "value": "other"
+      }
+    ]
+  },
+  {
+    "label": "Price",
+    "name": "price",
+    "type": "range",
+    "min_label": "Minim",
+    "max_label": "Maxim"
+  }
+]
