@@ -22,36 +22,27 @@ export default function Home() {
         }
     }
 
-    const updateQueryParamsAndFetch = async (updatedFilters, filterType) => {
-        const queryParams = new URLSearchParams();
-        if(filterType == "checkbox"){}
-        for (const [key, values] of Object.entries(updatedFilters)) {
-            if (filterType === 'checkbox') {
-                queryParams.set(`${key}[checkbox]`, values.join(','));
-            }
-            if (filterType === 'radio') {
-                queryParams.set(`${key}[radio]`, values.join(','));
-            }
+    const applyFilters = async (queryParams) => {
+        try {
+            const response = await axios.get(`http://localhost:5000/api/filter?${queryParams}`);
+            setImages(response.data.images);
+            setFilters(response.data.filters);
+        } catch (e) {
+            console.error(e)
         }
-
-        console.log(queryParams.toString());
-    };
-
-    const handleFilterChange = async (updatedFilters, filterType) => {
-        await updateQueryParamsAndFetch(updatedFilters, filterType);
     }
+
 
     useEffect(() => {
         initialFetchFiltersAndImages();
     }, []);
-
 
     return (
         <main className="max-w-7xl mx-auto mt-10 px-4">
             <Navbar/>
             <div className="w-full flex flex-col md:flex-row">
                 <div className="w-full md:w-[25%] p-2">
-                    <Filters filters={filters} onFilterChange={handleFilterChange}/>
+                    <Filters filters={filters} onFilterSubmit={applyFilters}/>
                 </div>
                 <div className="w-full md:w-[75%] p-2">
                     <ImagesGrid images={images}/>
