@@ -12,19 +12,6 @@ dd = DD(host, port, 0, path=path)
 dd.set_return_format(dd.RETURN_PYTHON)
 
 
-# def check_photo_by_row(row):
-#     url = row["Poster"]
-#     if isinstance(url, str) and url.startswith('\"'):
-#         url = url.strip('\"')
-#     r = requests.get(url, allow_redirects=True)
-#     return r.status_code == 200
-#
-# def filter_unresponsive_photos(csv_path, images_path):
-#     df = pd.read_csv(csv_path, encoding="ISO-8859-1")
-#     df_unresponsive = df.apply(lambda row: not check_photo_by_row(row), axis=1)
-#
-#     print(df_unresponsive)
-
 def get_objects_from_prediction(prediction):
     objects = []
     for pred_class in prediction['classes']:
@@ -123,32 +110,35 @@ def write_dictionary_to_csv(dictionary, destination):
     df_dict = pd.DataFrame(dictionary)
     df_dict.to_csv(destination, index=False)
 
+def main():
+    source_folder = "data/subsets/"
+    source_file = "MovieGenre_1000.csv"
+    df = pd.read_csv(os.path.join(source_folder, source_file), encoding = "ISO-8859-1")
+    poster_list = df["Poster"].to_list()
+    poster_list = [url.strip('\"') for url in poster_list]
 
-source_folder = "data/subsets/"
-source_file = "MovieGenre_1000.csv"
-df = pd.read_csv(os.path.join(source_folder, source_file), encoding = "ISO-8859-1")
-poster_list = df["Poster"].to_list()
-poster_list = [url.strip('\"') for url in poster_list]
+    poster_objects = get_objects_in_photos(poster_list, 15)
+    new_file = source_file.strip('.csv') + "_poster_objects.csv"
+    write_dictionary_to_csv(poster_objects, os.path.join(source_folder, new_file))
 
-# poster_objects = get_objects_in_photos(poster_list, 15)
-# new_file = source_file.strip('.csv') + "_poster_objects.csv"
-# write_dictionary_to_csv(poster_objects, os.path.join(source_folder, new_file))
+    poster_main_themes = get_main_themes_in_photos(poster_list, 60)
+    new_file = source_file.strip('.csv') + "_poster_main_themes.csv"
+    write_dictionary_to_csv(poster_main_themes, os.path.join(source_folder, new_file))
 
-# poster_main_themes = get_main_themes_in_photos(poster_list, 60)
-# new_file = source_file.strip('.csv') + "_poster_main_themes.csv"
-# write_dictionary_to_csv(poster_main_themes, os.path.join(source_folder, new_file))
+    poster_nsfw = get_is_nsfw_photos(poster_list, 1)
+    new_file = source_file.strip('.csv') + "_poster_nsfw.csv"
+    write_dictionary_to_csv(poster_nsfw, os.path.join(source_folder, new_file))
 
-# poster_nsfw = get_is_nsfw_photos(poster_list, 1)
-# new_file = source_file.strip('.csv') + "_poster_nsfw.csv"
-# write_dictionary_to_csv(poster_nsfw, os.path.join(source_folder, new_file))
+    poster_clothes = get_clothes_in_photos(poster_list, 8)
+    new_file = source_file.strip('.csv') + "_poster_clothes.csv"
+    write_dictionary_to_csv(poster_clothes, os.path.join(source_folder, new_file))
 
-poster_clothes = get_clothes_in_photos(poster_list, 8)
-new_file = source_file.strip('.csv') + "_poster_clothes.csv"
-write_dictionary_to_csv(poster_clothes, os.path.join(source_folder, new_file))
+    poster_emotions = get_emotions_in_photos(poster_list, 1)
+    new_file = source_file.strip('.csv') + "_poster_emotions.csv"
+    write_dictionary_to_csv(poster_emotions, os.path.join(source_folder, new_file))
 
-poster_emotions = get_emotions_in_photos(poster_list, 1)
-new_file = source_file.strip('.csv') + "_poster_emotions.csv"
-write_dictionary_to_csv(poster_emotions, os.path.join(source_folder, new_file))
+if __name__ == "__main__":
+   main()
 
 
 
