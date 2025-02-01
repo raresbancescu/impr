@@ -71,6 +71,26 @@ def filter_data():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+@app.route('/api/general-search', methods=['GET'])
+def general_search():
+    searched_value = request.args.get('search')
+    print(searched_value)
+
+    try:
+        with open("static/filters/filters3.json", "r") as filters_file:
+            filters = json.load(filters_file)
+
+        with open("static/images/images3.json", "r") as images_file:
+            images = json.load(images_file)
+        return jsonify(
+            {
+                "filters": filters,
+                "images": images
+            }
+        )
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)

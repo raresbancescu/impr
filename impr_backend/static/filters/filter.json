@@ -2,38 +2,32 @@
   "color": {
     "type": "checkbox",
     "label": "Color",
-    "searchable": true,
-    "options": [
-      {
+    "options": {
+      "red": {
         "label": "Red",
         "count": 20,
-        "selected": true,
-        "value": "red"
+        "selected": true
       },
-      {
+      "blue": {
         "label": "Blue",
         "count": 30,
-        "selected": true,
-        "value": "blue"
+        "selected": true
       },
-      {
+      "green": {
         "label": "Green",
         "count": 40,
-        "selected": true,
-        "value": "green"
+        "selected": true
       },
-      {
+      "yellow": {
         "label": "Yellow",
         "count": 50,
-        "selected": false,
-        "value": "yellow"
+        "selected": false
       }
-    ]
+    }
   },
   "gender": {
     "type": "radio",
     "label": "Gender",
-    "searchable": true,
     "options": [
       {
         "label": "Man",
@@ -54,5 +48,11 @@
         "value": "non-binary"
       }
     ]
+  },
+  "price": {
+    "type": "range",
+    "label": "Price",
+    "min_label": "Minim",
+    "max_label": "Maxim"
   }
 }
