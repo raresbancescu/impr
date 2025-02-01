@@ -1,2 +1,4 @@
 .idea/
 images/
+deepdetect/
+__pycache__/
