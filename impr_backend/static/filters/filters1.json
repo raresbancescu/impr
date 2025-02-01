@@ -1,0 +1,55 @@
+[
+  {
+    "label": "Color",
+    "name": "color",
+    "type": "checkbox",
+    "options": [
+      {
+        "label": "Red",
+        "value": "red"
+      },
+      {
+        "label": "Blue",
+        "value": "blue"
+      },
+      {
+        "label": "Green",
+        "value": "green"
+      },
+      {
+        "label": "Yellow",
+        "value": "yellow"
+      }
+    ]
+  },
+  {
+    "label": "Gender",
+    "name": "gender",
+    "type": "radio",
+    "options": [
+      {
+        "label": "Man",
+        "value": "man"
+      },
+      {
+        "label": "Female",
+        "value": "female"
+      },
+      {
+        "label": "Non-binary",
+        "value": "non-binary"
+      },
+      {
+        "label": "Other",
+        "value": "other"
+      }
+    ]
+  },
+  {
+    "label": "Price",
+    "name": "price",
+    "type": "range",
+    "min_label": "Minim",
+    "max_label": "Maxim"
+  }
+]

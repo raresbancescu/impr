@@ -1,0 +1,62 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+*.so
+*.dylib
+*.egg
+*.eggs
+*.dist-info
+*.egg-info
+dist
+build
+develop-eggs
+.eggs
+lib
+lib64
+parts
+sdist
+var
+*.bak
+*.swp
+*~
+
+# Flask
+instance/
+.pytest_cache/
+coverage/
+*.log
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Virtualenv
+venv/
+ENV/
+env/
+venv.bak/
+env.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Packaging
+*.tar.gz
+*.zip
+*.tar
+*.tgz
+*.bak
