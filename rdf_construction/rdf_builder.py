@@ -112,6 +112,8 @@ def build_rdf(movie_file):
             if row['Emotions']:
                 process_faces(g, image_uri, row['Emotions'])
 
+    g.serialize(destination=movie_file.split('.')[0] + ".ttl", format='turtle')
+
 def main():
     build_rdf("data/subsets/MovieGenre_1000_complete.csv")
 
