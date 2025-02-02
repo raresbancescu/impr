@@ -1,9 +1,6 @@
-from pybullet_examples.heightfield import height
 from rdflib import URIRef, BNode, Literal, Namespace, Graph
 from rdflib.namespace import FOAF, DCTERMS, XSD, RDF, SDO, DC, SKOS
 import csv
-
-from rdflib.plugins.sparql.parser import BlankNode
 
 EXIF = Namespace("https://developer.adobe.com/xmp/docs/XMPNamespaces/exif/")
 IMPR = Namespace('http://example.org/impr/')
@@ -24,7 +21,7 @@ def process_main_themes(g, image_uri, themes_str):
     synonyms = [s.strip() for s in themes_str.split(',')]
     primary_theme = synonyms[0]
 
-    theme = BlankNode()
+    theme = BNode()
     g.add((theme, RDF.type, SKOS.Concept))
     g.add((theme, IMPR.mainLabel, Literal(primary_theme)))
     for s in synonyms[1:]:
@@ -39,7 +36,7 @@ def process_faces(g, image_uri, emotions_str):
         face_node = BNode()
 
         # Link face to image
-        g.add((image_uri, SDO.depicts, face_node))
+        g.add((image_uri, FOAF.depicts, face_node))
         g.add((face_node, RDF.type, SDO.Person))
 
         g.add((face_node, IMPR.emotion, Literal(emotion)))
@@ -54,14 +51,13 @@ def build_rdf(movie_file):
     g.bind("skos", SKOS)
     g.bind("mfoem", MFOEM)
 
-    with open(movie_file, 'r') as csvfile:
+    with open(movie_file, 'r', encoding = "ISO-8859-1") as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             movie_uri = URIRef(row["Imdb Link"])
             # Basic movie info
             g.add((movie_uri, RDF.type, SDO.Movie))
             g.add((movie_uri, SDO.name, Literal(row['Title'])))
-            g.add((movie_uri, SDO.contentRating, Literal( "SFW" if row['Rating'] == "ok" else "NSFW")))
 
             rating = BNode()
             g.add((movie_uri, SDO.aggregateRating, rating))
@@ -76,6 +72,7 @@ def build_rdf(movie_file):
             g.add((movie_uri, SDO.image, image_uri))
             g.add((image_uri, RDF.type, SDO.ImageObject))
             g.add((image_uri, DC.format, Literal(row['MIME type'])))
+            g.add((image_uri, SDO.contentRating, Literal( "SFW" if row['NSFW'] == "ok" else "NSFW")))
 
             width_value, width_unit = row['Image width'].split()
             height_value, height_unit = row['Image height'].split()
@@ -83,13 +80,13 @@ def build_rdf(movie_file):
             width_node = BNode()
             g.add((width_node, RDF.type, SDO.QuantitativeValue))
             g.add((width_node, SDO.value, Literal(int(width_value), datatype=XSD.integer)))
-            g.add((width_node, SDO.unitCode, Literal("E37", datatype=XSD.text)))  # UN/CEFACT code for "pixel"
+            g.add((width_node, SDO.unitCode, Literal("E37", datatype=XSD.ID)))  # UN/CEFACT code for "pixel"
             g.add((image_uri, SDO.width, width_node))
 
             height_node = BNode()
             g.add((height_node, RDF.type, SDO.QuantitativeValue))
             g.add((height_node, SDO.value, Literal(int(height_value), datatype=XSD.integer)))
-            g.add((height_node, SDO.unitCode, Literal("E37", datatype=XSD.text)))  # UN/CEFACT code for "pixel"
+            g.add((height_node, SDO.unitCode, Literal("E37", datatype=XSD.ID)))  # UN/CEFACT code for "pixel"
             g.add((image_uri, SDO.height, height_node))
 
             g.add((image_uri, EXIF.CompressedBitsPerPixel, Literal(int(row['Bits/pixel']), datatype=XSD.integer)))
@@ -100,14 +97,14 @@ def build_rdf(movie_file):
             # Custom properties (split pipe-separated values)
             if row['Objects']:
                 for obj in row['Objects'].split('|') if row['Objects'] else []:
-                    g.add((movie_uri, IMPR.containsObject, Literal(obj)))
+                    g.add((image_uri, IMPR.containsObject, Literal(obj)))
 
             if row['MainThemes']:
                 process_main_themes(g, image_uri, row['MainThemes'])
 
             if row['Clothes']:
                 for cloth in row['Clothes'].split('|') if row['Clothes'] else []:
-                    g.add((movie_uri, IMPR.containsClothing, Literal(cloth)))
+                    g.add((image_uri, IMPR.containsClothing, Literal(cloth)))
 
             if row['Emotions']:
                 process_faces(g, image_uri, row['Emotions'])
