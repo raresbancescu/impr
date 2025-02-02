@@ -1,19 +1,15 @@
-import Image from "next/image";
+import ImageCard from './ImageCard';
 
-const ImagesGrid = ({images}) => {
+const ImagesGrid = ({ images }) => {
     return (
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 ml-8">
             {images.map((image) => (
                 <div key={image.id}>
-                    <div className="relative">
-                        <div className="w-full h-full">
-                            <img className="rounded-md shadow-sm aspect-[4/5] w-full h-full" src={image.imageUrl} alt={image.title} />
-                        </div>
-                    </div>
+                    <ImageCard image={image} />
                 </div>
             ))}
         </div>
-    )
-}
+    );
+};
 
 export default ImagesGrid;

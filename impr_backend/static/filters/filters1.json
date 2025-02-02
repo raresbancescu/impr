@@ -1,55 +1,99 @@
-[
-  {
-    "label": "Color",
-    "name": "color",
+{
+  "color": {
     "type": "checkbox",
+    "label": "Color",
+    "searchable": true,
     "options": [
       {
         "label": "Red",
+        "count": 20,
+        "selected": true,
         "value": "red"
       },
       {
         "label": "Blue",
+        "count": 30,
+        "selected": true,
         "value": "blue"
       },
       {
         "label": "Green",
+        "count": 40,
+        "selected": true,
         "value": "green"
       },
       {
         "label": "Yellow",
+        "count": 50,
+        "selected": false,
         "value": "yellow"
+      },
+      {
+        "label": "Black",
+        "count": 60,
+        "selected": false,
+        "value": "black"
+      },
+      {
+        "label": "White",
+        "count": 70,
+        "selected": false,
+        "value": "white"
+      },
+      {
+        "label": "Purple",
+        "count": 80,
+        "selected": false,
+        "value": "purple"
+      },
+      {
+        "label": "Orange",
+        "count": 90,
+        "selected": false,
+        "value": "orange"
+      },
+      {
+        "label": "Pink",
+        "count": 100,
+        "selected": false,
+        "value": "pink"
       }
     ]
   },
-  {
-    "label": "Gender",
-    "name": "gender",
+  "gender": {
     "type": "radio",
+    "label": "Gender",
+    "searchable": false,
     "options": [
       {
         "label": "Man",
+        "selected": true,
+        "count": 10,
         "value": "man"
       },
       {
         "label": "Female",
+        "selected": false,
+        "count": 15,
         "value": "female"
       },
       {
         "label": "Non-binary",
+        "selected": false,
+        "count": 30,
         "value": "non-binary"
-      },
-      {
-        "label": "Other",
-        "value": "other"
       }
     ]
   },
-  {
-    "label": "Price",
-    "name": "price",
+  "price": {
     "type": "range",
+    "label": "Price",
+    "searchable": false,
     "min_label": "Minim",
-    "max_label": "Maxim"
+    "max_label": "Maxim",
+    "min_recommended_value": 100,
+    "max_recommended_value": 400,
+    "min_value": "",
+    "max_value": ""
   }
-]
+}
