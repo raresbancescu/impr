@@ -133,11 +133,18 @@ const MovieCard = ({movie}) => {
                                 const formattedKey = key.replace(/_/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
 
                                 return (
-                                    <div key={key} className="flex flex-col justify-between mb-4">
-                                        <span className="text-lg text-slate-800 font-semibold">{formattedKey}:</span>
-                                        <p className="text-slate-600 font-semibold">
-                                            {Array.isArray(value) ? value.join(", ") : value}
-                                        </p>
+                                    <div key={key} className="flex flex-col justify-between mb-4 max-w-full overflow-hidden">
+                                        <span className="text-lg text-slate-800 break-words font-semibold">{formattedKey}:</span>
+                                        {key === "poster_url" ?
+                                            (<a href={value} target="_blank" rel="noopener noreferrer"
+                                               className="text-blue-500 underline break-words">
+                                                {value}
+                                            </a>)
+                                        :(
+                                            <p className="text-slate-600 w-full break-words font-semibold">
+                                                {Array.isArray(value) ? value.join(", ") : value}
+                                            </p>
+                                    )}
                                     </div>
                                 );
                             })}

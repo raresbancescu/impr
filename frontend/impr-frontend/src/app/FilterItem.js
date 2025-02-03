@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import {ChevronDownIcon, ChevronUpIcon} from "@heroicons/react/16/solid";
 
-const CheckBoxesAndRadioItem = ({id, label, ...props}) => {
+const CheckBoxesAndRadioItem = ({id, label,count, ...props}) => {
     return (
         <div className="flex items-center p-2 rounded-sm hover:bg-gray-100">
             <input
@@ -10,7 +10,7 @@ const CheckBoxesAndRadioItem = ({id, label, ...props}) => {
                 {...props}
             />
             <label htmlFor={id} className="w-full ms-2 text-sm font-medium text-gray-900 rounded-sm ">
-                {label}
+                {label} ({count})
             </label>
         </div>
     );
@@ -36,6 +36,7 @@ const renderFilters = (filter, handleCheckboxAndRadioFilterChange, handleRangeFi
                 value={option.value}
                 onChange={() => handleCheckboxAndRadioFilterChange(filter.name, option.value, filter.type)}
                 checked={option.selected}
+                count={option.count}
                 className="col-span-1"
             />
         ));
@@ -101,7 +102,6 @@ const FilterItem = ({filter, handleCheckboxAndRadioFilterChange, handleRangeFilt
                     filter["searchable"] ?
                         <div className="flex flex-col">
                             <div className="flex flex-wrap gap-2 mb-2">
-
                                 {
                                     filter.options.filter((option) => option.selected === true).map((option) => (
                                         <div key={option.value}

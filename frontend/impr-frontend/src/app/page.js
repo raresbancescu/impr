@@ -88,7 +88,9 @@ export default function Home() {
 
     return (
         <main className="max-w-7xl mx-auto mt-10 px-4">
-            <Navbar updateQueryParams={updateQueryParams} onFilterSubmit={applyFilters}/>
+            <div className="sticky top-0 z-50 bg-white">
+                <Navbar updateQueryParams={updateQueryParams} onFilterSubmit={applyFilters} />
+            </div>
             <div className="w-full flex flex-col md:flex-row">
                 <div className="w-full md:w-[25%] p-2">
                     {filtersLoading ? (

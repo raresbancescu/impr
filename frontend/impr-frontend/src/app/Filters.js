@@ -70,20 +70,29 @@ const Filters = ({filters, onFilterSubmit, updateQueryParams}) => {
     }
 
     return (
-        <div className="col-span-2 space-y-6 top-12 h-fit sticky">
+        <div className="col-span-2 space-y-6 top-12 h-fit flex flex-col sticky">
+            <div className="overflow-y-auto max-h-[800px] space-y-6">
             {Object.entries(filters).map(([key,filter_props]) => (
                 <FilterItem key={key} filter={{name:key, ...filter_props}} handleCheckboxAndRadioFilterChange={handleCheckboxAndRadioFilterChange} handleRangeFilterChange={handleRangeFilterChange} />
             ))}
-            <div className="py-2 mb-8">
-                <button
-                    className="text-red-500 cursor-pointer font-semibold"
-                    onClick={() => clearFilters()}
-                >
-                    Clear Filters
-                </button>
             </div>
-            <div className="flex justify-center">
-                <button onClick={() => onFilterSubmit()} className="bg-slate-500 w-full text-white hover:bg-gray-900 px-4 py-2 rounded-md mt-12">Filter</button>
+            <div className="sticky bottom-0 bg-white py-4">
+                <div className="py-2 mb-4 text-center">
+                    <button
+                        className="text-red-500 cursor-pointer font-semibold"
+                        onClick={() => clearFilters()}
+                    >
+                        Clear Filters
+                    </button>
+                </div>
+                <div className="flex justify-center">
+                    <button
+                        onClick={() => onFilterSubmit()}
+                        className="bg-slate-500 w-full text-white hover:bg-gray-900 px-4 py-2 rounded-md"
+                    >
+                        Filter
+                    </button>
+                </div>
             </div>
         </div>
     );
