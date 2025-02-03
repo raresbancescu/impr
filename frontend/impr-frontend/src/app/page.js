@@ -9,6 +9,7 @@ import axios from "axios";
 
 export default function Home() {
 
+    const [queryParams, setQueryParams] = useState(new URLSearchParams());
     const [filters, setFilters] = useState([]);
     const [movies, setMovies] = useState([]);
     const [moviesLoading, setMoviesLoading] = useState(true);
@@ -21,7 +22,7 @@ export default function Home() {
             const response = await axios.get(`http://localhost:5000/api/initial`);
             setFilters(response.data.filters);
             setMovies(response.data.movies);
-            console.log(movies);
+            console.log(response.data.movies);
         } catch (e) {
             console.error(e)
         } finally {
@@ -30,7 +31,7 @@ export default function Home() {
         }
     }
 
-    const applyFilters = async (queryParams) => {
+    const applyFilters = async () => {
         setFiltersLoading(true);
         setMoviesLoading(true);
         try {
@@ -45,26 +46,41 @@ export default function Home() {
         }
     }
 
-    const generalSearchFetch = async (searchValue) => {
-        setMoviesLoading(true);
-        setFiltersLoading(true);
-        try {
-            const response = await axios.get(`http://localhost:5000/api/general-search?search=${searchValue}`);
-            setMovies(response.data.movies);
-            setFilters(response.data.filters);
-        } catch (e) {
-            console.error(e)
-        } finally {
-            setFiltersLoading(false);
-            setMoviesLoading(false);
-        }
+    const handleChangePageNumber = async (pageNumber) => {
+        // setMoviesLoading(true);
+        // try{
+        //     const response = await axios.get(`http://localhost:5000/api/filter?${queryParams}&page=${pageNumber}`);
+        //     setMovies(response.data.movies);
+        // }
+        // catch (e) {
+        //     console.error(e);
+        // }
+        // setMoviesLoading(false);
     }
 
-    const handleChangePageNumber = async (pageNumber) => {
-        setMoviesLoading(true);
-        console.log(pageNumber);
-        setMoviesLoading(false);
-    }
+    const updateQueryParams = (updatedFilters, searchQuery) => {
+        setQueryParams((prevState) => {
+            const currentQueryParams = new URLSearchParams(prevState);
+            if (updatedFilters !== {}) {
+                for (const [key, values] of Object.entries(updatedFilters)) {
+                    if (values.type === 'checkbox') {
+                        currentQueryParams.set(`${key}[checkbox]`, values.options.filter((option) => option.selected).map((option) => option.value).join(','));
+                    }
+                    if (values.type === 'radio') {
+                        currentQueryParams.set(`${key}[radio]`, values.options.filter((option) => option.selected).map((option) => option.value));
+                    }
+                    if (values.type === "range") {
+                        currentQueryParams.set(`${key}[range]`, `${values.min_value}-${values.max_value}`);
+                    }
+                }
+            }
+            if (searchQuery !== "") {
+                currentQueryParams.set('search', searchQuery);
+            }
+            console.log(currentQueryParams.toString());
+            return currentQueryParams;
+        });
+    };
 
     useEffect(() => {
         initialFetchFiltersAndMovies();
@@ -72,7 +88,7 @@ export default function Home() {
 
     return (
         <main className="max-w-7xl mx-auto mt-10 px-4">
-            <Navbar generalSearchFetch={generalSearchFetch}/>
+            <Navbar updateQueryParams={updateQueryParams} onFilterSubmit={applyFilters}/>
             <div className="w-full flex flex-col md:flex-row">
                 <div className="w-full md:w-[25%] p-2">
                     {filtersLoading ? (
@@ -82,7 +98,7 @@ export default function Home() {
                             <Skeleton variant="text" width="100%" height={250}/>
                         </div>
                     ) : (
-                        <Filters filters={filters} onFilterSubmit={applyFilters}/>
+                        <Filters filters={filters} onFilterSubmit={applyFilters} updateQueryParams={updateQueryParams}/>
                     )}
                 </div>
                 <div className="w-full md:w-[75%] p-2">
@@ -97,9 +113,10 @@ export default function Home() {
                                 </div>
                             ))}
                         </div>
-                    ) : (
-                        <MoviesGrid movies={movies} perPage={10} totalNumberOfMovies={36} handlePageLoading={handleChangePageNumber}/>
-                    )}
+                    ) : movies.length !==0 ? (
+                        <MoviesGrid movies={movies} perPage={10} totalNumberOfMovies={movies.length}
+                                    handleChangePageNumber={handleChangePageNumber}/>
+                    ) : (<div>No movies found</div>)}
                 </div>
             </div>
         </main>

@@ -1,20 +1,17 @@
 import MovieCard from './MovieCard';
 import {useEffect, useState} from "react";
 
-const MoviesGrid = ({movies, perPage, totalNumberOfMovies, handlePageLoading}) => {
+const MoviesGrid = ({movies, perPage, totalNumberOfMovies, handleChangePageNumber}) => {
     const [pageNumber, setPageNumber] = useState(1);
 
-    useEffect(() => {
-        handlePageLoading(pageNumber)
-    }, [pageNumber]);
     return (
         <div className="flex flex-col">
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 ml-8">
-                {Object.entries(movies).map(([key, movie_props]) => (
-                    <div key={key}>
-                        <MovieCard movie={{poster_url: key, ...movie_props}}/>
+                {movies.map((movie_props, index) => (
+                    <div key={index}>  {/* Use index or a unique identifier from movie_props */}
+                        <MovieCard movie={movie_props} />
                     </div>
-                ))}
+                    ))}
             </div>
             <div className="flex flex-col items-center mt-12">
                 <span className="text-sm text-gray-700">
@@ -26,7 +23,13 @@ const MoviesGrid = ({movies, perPage, totalNumberOfMovies, handlePageLoading}) =
                 <div className="inline-flex mt-2 gap-4 mb-4">
                     <button
                         onClick={() => {
-                            setPageNumber((prev) => prev > 1 ? prev - 1 : 1)
+                            setPageNumber((prev) =>{
+                                let pageNumber = prev;
+                                pageNumber = pageNumber > 1 ? pageNumber - 1 : 1
+                                setPageNumber(pageNumber)
+                                handleChangePageNumber(pageNumber)
+                                return pageNumber
+                            })
                         }}
                         className="flex items-center justify-center px-4 h-10 text-base font-medium text-white bg-slate-500 rounded-md hover:bg-gray-900">
                         <svg className="w-3.5 h-3.5 me-2 rtl:rotate-180" aria-hidden="true"
@@ -38,7 +41,13 @@ const MoviesGrid = ({movies, perPage, totalNumberOfMovies, handlePageLoading}) =
                     </button>
                     <button
                         onClick={() => {
-                            setPageNumber((prev) => prev < totalNumberOfMovies / perPage ? prev + 1 : prev)
+                            setPageNumber((prev) =>{
+                                let pageNumber = prev;
+                                pageNumber = pageNumber < Math.ceil(totalNumberOfMovies/perPage) ? pageNumber + 1 : Math.ceil(totalNumberOfMovies/perPage)
+                                setPageNumber(pageNumber)
+                                handleChangePageNumber(pageNumber)
+                                return pageNumber
+                            })
                         }}
                         className="flex items-center justify-center px-4 h-10 text-base font-medium text-white bg-slate-500 rounded-md hover:bg-gray-900">
                         Next

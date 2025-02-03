@@ -21,7 +21,7 @@ const MovieCard = ({movie}) => {
     }, [modalOpen]);
 
     const toggleModal = () => setModalOpen(!modalOpen);
-
+    console.log(movie);
     return (
         <div className="bg-red w-full rounded-md shadow-sm">
             <div className="w-full h-[300px]">
@@ -81,9 +81,9 @@ const MovieCard = ({movie}) => {
                                 </svg>
                             </button>
                         </div>
-                        <div className="px-6 py-4">
+                        <div className="px-6 py-4 flex flex-row items-center justify-center">
                             <img
-                                className="w-full h-64 object-cover rounded-md"
+                                className="w-80 h-80 object-fit rounded-md"
                                 src={movie['poster_url']}
                                 alt={movie.title}
                             />

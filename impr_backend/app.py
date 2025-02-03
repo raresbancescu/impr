@@ -2,10 +2,11 @@ from flask_cors import CORS
 from flask import Flask, jsonify, request
 import json
 
+from rdf_querying import apply_filters
+
 app = Flask(__name__)
 
-CORS(app, origins="http://localhost:3000")
-
+CORS(app, origins="http://localhost:3001")
 
 @app.route('/api/initial', methods=['GET'])
 def get_initial_data():
@@ -13,8 +14,7 @@ def get_initial_data():
         with open("static/filters/filters1.json", "r") as filters_file:
             filters = json.load(filters_file)
 
-        with open("static/images/images3.json", "r") as images_file:
-            movies = json.load(images_file)
+        movies = apply_filters([],"")
         return jsonify(
             {
                 "filters": filters,
@@ -66,27 +66,6 @@ def filter_data():
                 "movies": images
             }
         )
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-@app.route('/api/general-search', methods=['GET'])
-def general_search():
-    searched_value = request.args.get('search')
-    print(searched_value)
-
-    try:
-        with open("static/filters/filters3.json", "r") as filters_file:
-            filters = json.load(filters_file)
-
-        with open("static/images/images3.json", "r") as images_file:
-            images = json.load(images_file)
-        return jsonify(
-            {
-                "filters": filters,
-                "movies": images
-            }
-        )
-
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
