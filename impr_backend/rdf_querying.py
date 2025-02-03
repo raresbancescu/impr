@@ -199,14 +199,51 @@ def create_select_query(filters, search_term):
     return select_query_str
 
 
+def extract_themes(main_theme, alt_themes):
+    themes = []
+    if main_theme:
+        themes.append(str(main_theme))
+        for alt_theme in str(alt_themes).split(", "):
+            themes.append(alt_theme)
+    return themes
+
+
 def apply_filters(filters, search_term):
     select_query_str = create_select_query(filters, search_term)
     print(select_query_str)
     query = g.query(select_query_str)
-    # for imdb_link, title, imdb_score, genres, image, content_rating, width, height, bits_per_pixel, pixel_format, compression, mime_type, endianness, objects, clothes, main_theme, alt_themes,emotions in query:
-    #     print(imdb_link, title, imdb_score, genres, image, content_rating, width, height, bits_per_pixel, pixel_format, compression, mime_type, endianness, objects, clothes, main_theme, alt_themes, emotions, sep=" || ")
-    for row in query:
-        print(row)
+    filtered_images = {}
+    for imdb_link, title, image, imdb_score, genres, compression, pixel_format, bits_per_pixel, content_rating, endianness, mime_type, width, height, clothes, objects, emotions, main_theme, alt_themes, in query:
+        image_object = {
+            "metadata": {
+                "mime_type": str(mime_type),
+                "content_rating": str(content_rating),
+                "compression": str(compression),
+                "width": int(str(width)),
+                "height": int(str(height)),
+                "bits_per_pixel": int(str(bits_per_pixel)),
+                "pixel_format": str(pixel_format),
+                "endianness": str(endianness)
+            },
+            "movie_data": {
+                "imdb_link": str(imdb_link),
+                "title": str(title),
+                "imdb_score": float(str(imdb_score)),
+                "genre": str(genres).split(", "),
+            },
+            "object": str(objects).split(", ") if str(objects) else [],
+            "theme": extract_themes(main_theme, alt_themes),
+            "clothing": str(clothes).split(", ") if str(clothes) else [],
+            "emotion": str(emotions).split(", ") if str(emotions) else [],
+        }
+
+        filtered_images[str(image)] = image_object
+    return filtered_images
+
+def update_filters(filters, filtered_images):
+    new_filters = {}
+    return new_filters
+
 
 def get_all_images():
     query = g.query('''
