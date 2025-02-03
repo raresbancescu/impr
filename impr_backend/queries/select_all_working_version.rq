@@ -1,0 +1,80 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX impr: <http://example.org/impr/>
+PREFIX ns1: <https://developer.adobe.com/xmp/docs/XMPNamespaces/exif/>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?imdb_link ?title ?image ?imdb_score ?genres ?compression ?pixel_format ?bits_per_pixel ?content_rating
+    ?endianness ?mime_type ?width ?height ?clothes ?objects ?emotions ?main_theme ?alt_themes
+WHERE {
+    ?imdb_link a schema:Movie ;
+        schema:name ?title ;
+        schema:image ?image ;
+        schema:aggregateRating [ schema:ratingValue ?imdb_score ] .
+    {
+        SELECT ?imdb_link (GROUP_CONCAT(DISTINCT ?genre; separator = ", ") AS ?genres)
+        WHERE {
+            ?imdb_link schema:genre ?genre .
+        }
+        GROUP BY ?imdb_link
+    }
+    OPTIONAL { ?image impr:compression ?compression . }
+    OPTIONAL { ?image impr:pixelFormat ?pixel_format . }
+    OPTIONAL { ?image ns1:CompressedBitsPerPixel ?bits_per_pixel . }
+    OPTIONAL { ?image schema:contentRating ?content_rating . }
+    OPTIONAL { ?image impr:endianness ?endianness . }
+    OPTIONAL { ?image dc:format ?mime_type . }
+    OPTIONAL { ?image schema:width [ schema:value ?width ] . }
+    OPTIONAL { ?image schema:height [ schema:value ?height ] . }
+    OPTIONAL {
+        SELECT ?imdb_link ?title ?image ?imdb_score ?genres ?compression ?pixel_format ?bits_per_pixel ?content_rating
+            ?endianness ?mime_type ?width ?height (GROUP_CONCAT(?clothing; separator=", ") AS ?clothes)
+        WHERE {
+            OPTIONAL { ?image impr:containsClothing ?clothing . }
+        }
+        GROUP BY ?image
+    }
+    OPTIONAL {
+        SELECT ?imdb_link ?title ?image ?imdb_score ?genres ?compression ?pixel_format ?bits_per_pixel ?content_rating
+            ?endianness ?mime_type ?width ?height ?clothes (GROUP_CONCAT(?object; separator=", ") AS ?objects)
+        WHERE {
+            OPTIONAL { ?image impr:containsObject ?object . }
+        }
+        GROUP BY ?image
+    }
+    OPTIONAL {
+        SELECT ?imdb_link ?title ?image ?imdb_score ?genres ?compression ?pixel_format ?bits_per_pixel ?content_rating
+            ?endianness ?mime_type ?width ?height ?clothes ?objects (GROUP_CONCAT(
+                                                                         ?emotion; separator=", ") AS ?emotions)
+        WHERE {
+            OPTIONAL {
+                ?image foaf:depicts
+                        [
+                            a schema:Person ;
+                            impr:emotion ?emotion
+                        ] .
+            }
+        }
+        GROUP BY ?image
+    }
+    OPTIONAL {
+        SELECT ?imdb_link ?title ?image ?imdb_score ?genres ?compression ?pixel_format ?bits_per_pixel ?content_rating
+            ?endianness ?mime_type ?width ?height ?clothes ?objects ?emotions ?main_theme (GROUP_CONCAT(
+                                                                                               ?alt_theme; separator=", ") AS ?alt_themes)
+        WHERE {
+            OPTIONAL {
+                ?image impr:hasTheme
+                        [
+                            a skos:Concept ;
+                            impr:mainLabel ?main_theme ;
+                            skos:altLabel ?alt_theme
+                        ] .
+            }
+        }
+        GROUP BY ?image ?main_theme
+    }
+}
+GROUP BY ?imdb_link ?title ?image ?imdb_score ?genres ?compression ?pixel_format ?bits_per_pixel ?content_rating
+?endianness ?mime_type ?width ?height ?clothes ?objects ?emotions ?main_theme ?alt_themes
