@@ -1,4 +1,5 @@
 from rdflib import Graph
+from collections import Counter
 
 g = Graph()
 g.parse("data/MovieGenre_50_complete.ttl", format="turtle")
@@ -240,8 +241,168 @@ def apply_filters(filters, search_term):
         filtered_images[str(image)] = image_object
     return filtered_images
 
-def update_filters(filters, filtered_images):
+
+def create_filters(filters, new_image_data):
     new_filters = {}
+    for data_category in new_image_data:
+        new_filter = {"label": new_image_data[data_category]["label"]}
+        match new_image_data[data_category]["type"]:
+            case "string":
+                new_filter["type"] = "checkbox"
+                distinct_values = Counter(new_image_data[data_category]["values"])
+                new_filter["searchable"] = len(distinct_values) > 10
+                selected = []
+                remaining = []
+
+                for key, val_count in distinct_values.items():
+                    option = {
+                        "label": key,
+                        "count": val_count,
+                        "value": key
+                    }
+                    if data_category in filters and key in filters[data_category]["values"]:
+                        option["selected"] = True
+                        selected.append(option)
+                    else:
+                        option["selected"] = False
+                        remaining.append(option)
+                selected.extend(remaining)
+                new_filter["options"] = selected
+            case "number":
+                new_filter["type"] = "range"
+                new_filter["searchable"] = False
+                new_filter["min_label"] = "Minimum"
+                new_filter["max_label"] = "Maximum"
+                min_value = min(new_image_data[data_category]["values"])
+                max_value = max(new_image_data[data_category]["values"])
+                new_filter["min_recommended_value"] = min_value
+                new_filter["max_recommended_value"] = max_value
+                if data_category in filters:
+                    curr_min = filters[data_category].get("min", float('-inf'))
+                    curr_max = filters[data_category].get("max", float('inf'))
+                    new_filter["min_value"] = curr_min if curr_min > min_value else min_value
+                    new_filter["max_value"] = curr_max if curr_max < max_value else max_value
+                else:
+                    new_filter["min_value"] = min_value
+                    new_filter["max_value"] = max_value
+        new_filters[data_category] = new_filter
+
+    return new_filters
+
+def update_filters(filters, filtered_images):
+    mime_type = []
+    content_rating = []
+    compression = []
+    width = []
+    height = []
+    bits_per_pixel = []
+    pixel_format = []
+    endianness = []
+    title = []
+    imdb_score = []
+    genre = []
+    objects = []
+    theme = []
+    clothing = []
+    emotion = []
+
+    for image in filtered_images:
+        mime_type.append(image["metadata"]["mime_type"])
+        content_rating.append(image["metadata"]["content_rating"])
+        compression.append(image["metadata"]["compression"])
+        width.append(image["metadata"]["width"])
+        height.append(image["metadata"]["height"])
+        bits_per_pixel.append(image["metadata"]["bits_per_pixel"])
+        pixel_format.append(image["metadata"]["pixel_format"])
+        endianness.append(image["metadata"]["endianness"])
+        title.append(image["movie_data"]["title"])
+        imdb_score.append(image["movie_data"]["imdb_score"])
+        genre.extend(image["movie_data"]["genre"])
+        objects.extend(set(image["object"]))
+        theme.extend(set(image["theme"]))
+        clothing.extend(set(image["clothing"]))
+        emotion.extend(set(image["emotion"]))
+
+    new_image_data = {
+        "title": {
+            "values": title,
+            "label": "Movie title",
+            "type": "string"
+        },
+        "imdb_score": {
+            "values": imdb_score,
+            "label": "IMDB Score",
+            "type": "number"
+        },
+        "genre": {
+            "values": genre,
+            "label": "Genre",
+            "type": "string"
+        },
+        "mime_type": {
+            "values": mime_type,
+            "label": "File type",
+            "type": "string"
+        },
+        "compression": {
+            "values": compression,
+            "label": "Compression",
+            "type": "string"
+        },
+        "width": {
+            "values": width,
+            "label": "Image width",
+            "type": "number"
+        },
+        "height": {
+            "values": height,
+            "label": "Image height",
+            "type": "number"
+        },
+        "bits_per_pixel": {
+            "values": bits_per_pixel,
+            "label": "Bits per pixel",
+            "type": "number"
+        },
+        "pixel_format": {
+            "values": pixel_format,
+            "label": "Pixel_format",
+            "type": "string"
+        },
+        "endianness": {
+            "values": endianness,
+            "label": "Endianness",
+            "type": "string"
+        },
+        "content_rating": {
+            "values": content_rating,
+            "label": "Is image safe for work",
+            "type": "string"
+        },
+        "object": {
+            "values": objects,
+            "label": "Contains objects",
+            "type": "string"
+        },
+        "theme": {
+            "values": theme,
+            "label": "Photo theme",
+            "type": "string"
+        },
+        "clothing": {
+            "values": clothing,
+            "label": "Fashion articles in photo",
+            "type": "string"
+        },
+        "emotion": {
+            "values": emotion,
+            "label": "Emotions on faces",
+            "type": "string"
+        },
+    }
+
+    new_filters = create_filters(filters, new_image_data)
+
     return new_filters
 
 
@@ -257,11 +418,6 @@ def get_all_images():
     for row in query:
         print(row)
     return images
-
-# def get_all_movies():
-#     print(f"Nr results: {len(query)}")
-#     for row in query:
-#         print(row)
 
 
 def get_all_clothing(images):
@@ -287,7 +443,9 @@ def main():
     # get_all_images()
     # get_all_clothing(images)
     # print(create_select_query([], ""))
-    apply_filters([], "")
+    filtered_images = apply_filters({}, "")
+    new_filters = update_filters({}, filtered_images)
+    print(new_filters)
 
 if __name__ == '__main__':
     main()

@@ -35,14 +35,12 @@ def filter_data():
         if '[checkbox]' in key:
             filter_name = key.replace('[checkbox]', '')
             decoded_filters[filter_name] = {
-                'type': 'checkbox',
                 'values': values[0].split(',')
             }
 
         elif '[radio]' in key:
             filter_name = key.replace('[radio]', '')
             decoded_filters[filter_name] = {
-                'type': 'radio',
                 'value': values[0]
             }
 
@@ -50,7 +48,6 @@ def filter_data():
             filter_name = key.replace('[range]', '')
             range_values = values[0].split('-')
             decoded_filters[filter_name] = {
-                'type': 'range',
                 'min': range_values[0],
                 'max': range_values[1]
             }
