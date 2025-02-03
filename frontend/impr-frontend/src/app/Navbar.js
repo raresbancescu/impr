@@ -5,8 +5,9 @@ const Navbar = ({generalSearchFetch}) => {
 
     return (
         <header className="flex flex-col md:flex-row justify-around items-center gap-8 py-5 mb-5">
-            <div className="w-full md:w-[20%]">
-                <h1 className="text-5-xl font-semibold text-slate-500">Smart image processor</h1>
+            <div className="flex flex-col w-full md:w-[20%] items-center justify-center">
+                <h1 className="text-xl font-semibold text-slate-900">Smart image processor</h1>
+                <img src="https://cdn-icons-png.flaticon.com/512/9539/9539868.png" alt="logo" className="w-20 h-20 rounded-full mt-4"/>
             </div>
             <div className="w-full md:w-[80%]">
                 <div className="max-w-lg mx-auto">

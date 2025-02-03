@@ -71,23 +71,41 @@ const Filters = ({filters, onFilterSubmit}) => {
         handleFilterChange(filtersState);
     }
 
+    const clearFilters = () => {
+        setFiltersState((prevState) => {
+            let updatedFilters = {...prevState};
+            for (const [key, filter] of Object.entries(updatedFilters)) {
+                if (filter.type === 'checkbox' || filter.type === 'radio') {
+                    filter.options.forEach((option) => {
+                        option.selected = false;
+                    });
+                }
+                if (filter.type === 'range') {
+                    filter.min_value = "";
+                    filter.max_value = "";
+                }
+            }
+            console.log(updatedFilters);
+            return updatedFilters;
+        })
+        handleFilterChange(filtersState);
+    }
+
     return (
         <div className="col-span-2 space-y-6 top-12 h-fit sticky">
+            {Object.entries(filters).map(([key,filter_props]) => (
+                <FilterItem key={key} filter={{name:key, ...filter_props}} handleCheckboxAndRadioFilterChange={handleCheckboxAndRadioFilterChange} handleRangeFilterChange={handleRangeFilterChange} />
+            ))}
             <div className="py-2 mb-8">
                 <button
                     className="text-red-500 cursor-pointer font-semibold"
-                    onClick={() => setFiltersState({})}
+                    onClick={() => clearFilters()}
                 >
                     Clear Filters
                 </button>
             </div>
-
-            {Object.entries(filters).map(([key,filter_props]) => (
-                <FilterItem key={key} filter={{name:key, ...filter_props}} handleCheckboxAndRadioFilterChange={handleCheckboxAndRadioFilterChange} handleRangeFilterChange={handleRangeFilterChange} />
-            ))}
-
             <div className="flex justify-center">
-                <button onClick={() => onFilterSubmit(queryParams)} className="bg-slate-500 w-full text-white px-4 py-2 rounded-md mt-12">Filter</button>
+                <button onClick={() => onFilterSubmit(queryParams)} className="bg-slate-500 w-full text-white hover:bg-gray-900 px-4 py-2 rounded-md mt-12">Filter</button>
             </div>
         </div>
     );
