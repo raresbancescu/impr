@@ -2,27 +2,22 @@ from flask_cors import CORS
 from flask import Flask, jsonify, request
 import json
 
-from rdf_querying import apply_filters
+from rdf_querying import apply_filters, update_filters
 
 app = Flask(__name__)
 
-CORS(app, origins="http://localhost:3001")
+CORS(app, origins="http://localhost:3000")
 
 @app.route('/api/initial', methods=['GET'])
 def get_initial_data():
-    try:
-        with open("static/filters/filters1.json", "r") as filters_file:
-            filters = json.load(filters_file)
-
-        movies = apply_filters([],"")
-        return jsonify(
-            {
-                "filters": filters,
-                "movies": movies
-            }
-        )
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+    movies = apply_filters({},"")
+    new_filters = update_filters({}, movies )
+    return jsonify(
+        {
+            "filters": new_filters,
+            "movies": movies
+        }
+    )
 
 
 @app.route('/api/filter', methods=['GET'])

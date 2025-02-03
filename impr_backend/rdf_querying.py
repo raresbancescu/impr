@@ -367,7 +367,7 @@ def update_filters(filters, filtered_images):
         },
         "pixel_format": {
             "values": pixel_format,
-            "label": "Pixel_format",
+            "label": "Pixel format",
             "type": "string"
         },
         "endianness": {
