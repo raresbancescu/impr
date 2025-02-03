@@ -13,12 +13,12 @@ def get_initial_data():
         with open("static/filters/filters1.json", "r") as filters_file:
             filters = json.load(filters_file)
 
-        with open("static/images/images1.json", "r") as images_file:
-            images = json.load(images_file)
+        with open("static/images/images3.json", "r") as images_file:
+            movies = json.load(images_file)
         return jsonify(
             {
                 "filters": filters,
-                "images": images
+                "movies": movies
             }
         )
     except Exception as e:
@@ -28,6 +28,7 @@ def get_initial_data():
 @app.route('/api/filter', methods=['GET'])
 def filter_data():
     query_params = request.args.to_dict(flat=False)
+    print(query_params)
     decoded_filters = {}
 
     for key, values in query_params.items():
@@ -54,7 +55,7 @@ def filter_data():
                 'max': range_values[1]
             }
 
-    print(decoded_filters)
+    print([decoded_filters])
 
     try:
         with open("static/filters/filters2.json", "r") as filters_file:
@@ -65,7 +66,7 @@ def filter_data():
         return jsonify(
             {
                 "filters": filters,
-                "images": images
+                "movies": images
             }
         )
     except Exception as e:
@@ -85,7 +86,7 @@ def general_search():
         return jsonify(
             {
                 "filters": filters,
-                "images": images
+                "movies": images
             }
         )
 

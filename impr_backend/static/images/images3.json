@@ -1,14 +1,127 @@
-[
-    {
-        "id": 1,
-        "imageUrl": "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg"
+{
+  "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png": {
+    "metadata": {
+      "mime_type": "image/png",
+      "content_rating": "G",
+      "compression": "lossless",
+      "width": "250",
+      "height": "250",
+      "bits_per_pixel": "24",
+      "pixel_format": "RGB",
+      "format": "PNG",
+      "endianess": "little"
     },
-    {
-        "id": 2,
-        "imageUrl": "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg"
+    "movie_data": {
+      "imdb_link": "https://www.imdb.com/title/tt0133093/",
+      "title": "The Matrix",
+      "imdb_score": 8.7,
+      "genre": [
+        "Action",
+        "Sci-Fi"
+      ]
     },
-    {
-        "id": 3,
-        "imageUrl": "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg"
-    }
-]
+    "object": [
+      "code",
+      "symbol",
+      "logo"
+    ],
+    "theme": [
+      "yellow",
+      "black"
+    ],
+    "clothing": [
+      "jacket",
+      "gloves",
+      "boots"
+    ],
+    "emotion": [
+      "curious",
+      "excited"
+    ]
+  },
+  "https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp": {
+    "metadata": {
+      "mime_type": "image/jpeg",
+      "content_rating": "PG-13",
+      "compression": "lossy",
+      "width": "500",
+      "height": "750",
+      "bits_per_pixel": "24",
+      "pixel_format": "RGB",
+      "format": "JPEG",
+      "endianess": "little"
+    },
+    "movie_data": {
+      "imdb_link": "https://www.imdb.com/title/tt0816692/",
+      "title": "Interstellar",
+      "imbd_score": 8.6,
+      "genre": [
+        "Adventure",
+        "Drama",
+        "Sci-Fi"
+      ]
+    },
+    "object": [
+      "spacesuit",
+      "planet",
+      "spaceship"
+    ],
+    "theme": [
+      "black",
+      "blue",
+      "white"
+    ],
+    "clothing": [
+      "space suit",
+      "helmet"
+    ],
+    "emotion": [
+      "awe",
+      "fear",
+      "hope"
+    ]
+  },
+  "https://images-na.ssl-images-amazon.com/images/M/MV5BMjQxMjE5OTA3OF5BMl5BanBnXkFtZTgwMDAxNTg4NjE@._V1_UX182_CR0,0,182,268_AL_.jpg": {
+    "metadata": {
+      "mime_type": "image/jpeg",
+      "content_rating": "G",
+      "compression": "lossy",
+      "width": "600",
+      "height": "900",
+      "bits_per_pixel": "24",
+      "pixel_format": "RGB",
+      "format": "JPEG",
+      "endianess": "little"
+    },
+    "movie_data": {
+      "imdb_link": "https://www.imdb.com/title/tt0435761/",
+      "title": "Toy Story 3",
+      "imbd_score": 8.3,
+      "genre": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ]
+    },
+    "object": [
+      "toys",
+      "box",
+      "room"
+    ],
+    "theme": [
+      "red",
+      "yellow",
+      "blue"
+    ],
+    "clothing": [
+      "cowboy hat",
+      "vest",
+      "boots"
+    ],
+    "emotion": [
+      "happy",
+      "nostalgic",
+      "sad"
+    ]
+  }
+}
