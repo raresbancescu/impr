@@ -1,7 +1,11 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
-const Navbar = ({generalSearchFetch}) => {
+const Navbar = ({updateQueryParams, onFilterSubmit}) => {
     const [searchValue, setSearchValue] = useState('');
+
+    useEffect(() => {
+        updateQueryParams({}, searchValue)
+    }, [searchValue]);
 
     return (
         <header className="flex flex-col md:flex-row justify-around items-center gap-8 py-5 mb-5">
@@ -40,7 +44,7 @@ const Navbar = ({generalSearchFetch}) => {
                                 if(searchValue.trim() === '') {
                                     return
                                 }
-                                generalSearchFetch(searchValue)
+                                onFilterSubmit()
                             }}
                             className="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Search
                         </button>

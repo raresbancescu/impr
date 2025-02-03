@@ -212,9 +212,10 @@ def apply_filters(filters, search_term):
     select_query_str = create_select_query(filters, search_term)
     print(select_query_str)
     query = g.query(select_query_str)
-    filtered_images = {}
+    filtered_images = []
     for imdb_link, title, image, imdb_score, genres, compression, pixel_format, bits_per_pixel, content_rating, endianness, mime_type, width, height, clothes, objects, emotions, main_theme, alt_themes, in query:
         image_object = {
+            "poster_url" : str(image),
             "metadata": {
                 "mime_type": str(mime_type),
                 "content_rating": str(content_rating),
@@ -237,7 +238,7 @@ def apply_filters(filters, search_term):
             "emotion": str(emotions).split(", ") if str(emotions) else [],
         }
 
-        filtered_images[str(image)] = image_object
+        filtered_images.append(image_object)
     return filtered_images
 
 def update_filters(filters, filtered_images):

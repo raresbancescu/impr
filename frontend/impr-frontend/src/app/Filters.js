@@ -3,36 +3,14 @@
 import {useEffect, useState} from "react";
 import FilterItem from "./FilterItem";
 
-const Filters = ({filters, onFilterSubmit}) => {
+const Filters = ({filters, onFilterSubmit, updateQueryParams}) => {
     const [filtersState, setFiltersState] = useState(filters);
-    const [queryParams, setQueryParams] = useState('');
 
     useEffect(() => {
         console.log(filters);
         setFiltersState(filters);
     }, [filters]);
 
-    const handleFilterChange = (updatedFilters) => {
-        const queryParams = updateQueryParams(updatedFilters);
-        setQueryParams(queryParams);
-    }
-
-    const updateQueryParams = (updatedFilters) => {
-        const queryParams = new URLSearchParams();
-        for (const [key, values] of Object.entries(updatedFilters)) {
-            if (values.type === 'checkbox') {
-                queryParams.set(`${key}[checkbox]`, values.options.filter((option) => option.selected).map((option) => option.value).join(','));
-            }
-            if (values.type === 'radio') {
-                queryParams.set(`${key}[radio]`, values.options.filter((option) => option.selected).map((option) => option.value));
-            }
-            if (values.type=== "range") {
-                queryParams.set(`${key}[range]`, `${values.min_value}-${values.max_value}`);
-            }
-        }
-        console.log(queryParams.toString());
-        return queryParams.toString();
-    };
 
     const handleCheckboxAndRadioFilterChange = (name, value, filterType) => {
         setFiltersState((prevState) => {
@@ -53,7 +31,7 @@ const Filters = ({filters, onFilterSubmit}) => {
             return updatedFilters;
         });
 
-        handleFilterChange(filtersState);
+        updateQueryParams(filtersState, "");
     };
 
     const handleRangeFilterChange = (name, value, index) => {
@@ -68,7 +46,7 @@ const Filters = ({filters, onFilterSubmit}) => {
 
             return updatedFilters;
         });
-        handleFilterChange(filtersState);
+        updateQueryParams(filtersState, "");
     }
 
     const clearFilters = () => {
@@ -88,7 +66,7 @@ const Filters = ({filters, onFilterSubmit}) => {
             console.log(updatedFilters);
             return updatedFilters;
         })
-        handleFilterChange(filtersState);
+        updateQueryParams(filtersState , "");
     }
 
     return (
@@ -105,7 +83,7 @@ const Filters = ({filters, onFilterSubmit}) => {
                 </button>
             </div>
             <div className="flex justify-center">
-                <button onClick={() => onFilterSubmit(queryParams)} className="bg-slate-500 w-full text-white hover:bg-gray-900 px-4 py-2 rounded-md mt-12">Filter</button>
+                <button onClick={() => onFilterSubmit()} className="bg-slate-500 w-full text-white hover:bg-gray-900 px-4 py-2 rounded-md mt-12">Filter</button>
             </div>
         </div>
     );
