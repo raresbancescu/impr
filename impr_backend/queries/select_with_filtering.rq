@@ -1,0 +1,137 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX impr: <http://example.org/impr/>
+PREFIX ns1: <https://developer.adobe.com/xmp/docs/XMPNamespaces/exif/>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?imdb_link ?title ?image ?imdb_score ?genres ?compression ?pixel_format ?bits_per_pixel ?content_rating
+    ?endianness ?mime_type ?width ?height ?clothes ?objects ?emotions ?main_theme ?alt_themes
+
+WHERE {
+    ?imdb_link a schema:Movie ;
+        schema:name ?title ;
+        schema:image ?image ;
+        schema:aggregateRating [ schema:ratingValue ?imdb_score ] .
+    FILTER (STR(?title) IN ("The Crossing Guard (1995)", "On the Line (2001)"))
+    FILTER (?imdb_score >= 4 && ?imdb_score <= 9)
+    FILTER (EXISTS {
+                       ?imdb_link schema:genre ?g .
+                       FILTER (STR(?g) IN ("Comedy", "Family", "Horror", "Romance", "Drama"))
+                   }
+    )
+    {
+        SELECT ?imdb_link (GROUP_CONCAT(DISTINCT ?genre; separator = ", ") AS ?genres)
+        WHERE {
+            ?imdb_link schema:genre ?genre .
+        }
+        GROUP BY ?imdb_link
+    }
+    OPTIONAL { ?image impr:compression ?compression . }
+    FILTER (STR(?compression) IN ("JPEG (Baseline)"))
+    OPTIONAL { ?image impr:pixelFormat ?pixel_format . }
+    FILTER (STR(?pixel_format) IN ("YCbCr"))
+    OPTIONAL { ?image ns1:CompressedBitsPerPixel ?bits_per_pixel . }
+    FILTER (?bits_per_pixel >= 0 && ?bits_per_pixel <= 50)
+    OPTIONAL { ?image schema:contentRating ?content_rating . }
+    FILTER (STR(?content_rating) IN ("SFW"))
+    OPTIONAL { ?image impr:endianness ?endianness . }
+    FILTER (STR(?endianness) IN ("Big endian"))
+    OPTIONAL { ?image dc:format ?mime_type . }
+    FILTER (STR(?mime_type) IN ("image/jpeg"))
+    OPTIONAL { ?image schema:width [ schema:value ?width ] . }
+    FILTER (?width >= 181 && ?width <= 183)
+    OPTIONAL { ?image schema:height [ schema:value ?height ] . }
+    FILTER (?height >= 267 && ?height <= 269)
+    FILTER (EXISTS {
+                       ?image impr:containsClothing ?clothing_item .
+                       FILTER (STR(?clothing_item) IN ("jacket"))
+                   }
+    )
+    OPTIONAL {
+        SELECT ?imdb_link ?title ?image ?imdb_score ?genres ?compression ?pixel_format ?bits_per_pixel
+            ?content_rating ?endianness ?mime_type ?width ?height
+            (GROUP_CONCAT(?clothing; separator=", ") AS ?clothes)
+        WHERE {
+            OPTIONAL { ?image impr:containsClothing ?clothing . }
+        }
+        GROUP BY ?image
+    }
+    FILTER (EXISTS {
+                       ?image impr:containsObject ?object_item .
+                       FILTER (STR(?object_item) IN ("Man", "Woman"))
+                   }
+    )
+    OPTIONAL {
+        SELECT ?imdb_link ?title ?image ?imdb_score ?genres ?compression ?pixel_format ?bits_per_pixel
+            ?content_rating ?endianness ?mime_type ?width ?height ?clothes
+            (GROUP_CONCAT(?object; separator=", ") AS ?objects)
+        WHERE {
+            OPTIONAL { ?image impr:containsObject ?object . }
+        }
+        GROUP BY ?image
+    }
+    FILTER (EXISTS {
+                       ?image foaf:depicts
+                               [
+                                   a schema:Person ;
+                                   impr:emotion ?emotion
+                               ] .
+                       FILTER (STR(?emotion) IN ("neutral", "happiness"))
+                   }
+    )
+    OPTIONAL {
+        SELECT ?imdb_link ?title ?image ?imdb_score ?genres ?compression ?pixel_format
+            ?bits_per_pixel ?content_rating ?endianness ?mime_type ?width ?height ?clothes ?objects
+            (GROUP_CONCAT(?emotion; separator=", ") AS ?emotions)
+        WHERE {
+            OPTIONAL {
+                ?image foaf:depicts
+                        [
+                            a schema:Person ;
+                            impr:emotion ?emotion
+                        ] .
+            }
+        }
+        GROUP BY ?image
+    }
+    FILTER (EXISTS {
+                       {
+                           # Check main theme
+                           ?image impr:hasTheme
+                                   [
+                                       a skos:Concept ;
+                                       impr:mainLabel ?theme
+                                   ] .
+                       } UNION {
+                           # Check alternative themes
+                           ?image impr:hasTheme
+                                   [
+                                       a skos:Concept ;
+                                       skos:altLabel ?theme
+                                   ] .
+                       }
+                       FILTER (STR(?theme) IN ("mag", "Fire engine"))
+                   }
+    )
+    OPTIONAL {
+        SELECT ?imdb_link ?title ?image ?imdb_score ?genres ?compression ?pixel_format
+            ?bits_per_pixel ?content_rating ?endianness ?mime_type ?width ?height
+            ?clothes ?objects ?emotions ?main_theme
+            (GROUP_CONCAT(?alt_theme; separator=", ") AS ?alt_themes)
+        WHERE {
+            OPTIONAL {
+                ?image impr:hasTheme
+                        [
+                            a skos:Concept ;
+                            impr:mainLabel ?main_theme ;
+                            skos:altLabel ?alt_theme
+                        ] .
+            }
+        }
+        GROUP BY ?image ?main_theme
+    }
+}
+GROUP BY ?imdb_link ?title ?image ?imdb_score ?genres ?compression ?pixel_format ?bits_per_pixel ?content_rating
+?endianness ?mime_type ?width ?height ?clothes ?objects ?emotions ?main_theme ?alt_themes

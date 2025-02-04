@@ -47,22 +47,16 @@ def filter_data():
                 'max': range_values[1]
             }
 
-    print([decoded_filters])
+    # print(decoded_filters)
+    movies = apply_filters(decoded_filters, "")
+    new_filters = update_filters(decoded_filters, movies)
 
-    try:
-        with open("static/filters/filters2.json", "r") as filters_file:
-            filters = json.load(filters_file)
-
-        with open("static/images/images2.json", "r") as images_file:
-            images = json.load(images_file)
-        return jsonify(
-            {
-                "filters": filters,
-                "movies": images
-            }
-        )
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+    return jsonify(
+        {
+            "filters": new_filters,
+            "movies": movies
+        }
+    )
 
 if __name__ == '__main__':
     app.run(debug=True)
