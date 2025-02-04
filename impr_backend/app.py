@@ -6,7 +6,7 @@ from rdf_querying import apply_filters, update_filters
 
 app = Flask(__name__)
 
-CORS(app, origins="http://localhost:3000")
+CORS(app, origins=["http://localhost:3000", "https://impr-git-main-raresbancescus-projects.vercel.app"])
 
 @app.route('/api/initial', methods=['GET'])
 def get_initial_data():
