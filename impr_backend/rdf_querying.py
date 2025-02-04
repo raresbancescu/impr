@@ -2,7 +2,7 @@ from rdflib import Graph
 from collections import Counter
 
 g = Graph()
-g.parse("data/MovieGenre_50_complete.ttl", format="turtle")
+g.parse("data/MovieGenre_100_complete.ttl", format="turtle")
 
 filter_types = {
     "movie_filters": {
@@ -118,6 +118,8 @@ def filter_by_theme(filter):
 def filter_by_imdb_score(filter):
     min_score = filter.get("min", -100000)
     max_score = filter.get("max", 100000)
+    min_score = -100000 if not min_score else min_score
+    max_score = 100000 if not max_score else max_score
     return f""" FILTER (?imdb_score >= {min_score} && ?imdb_score <= {max_score}) """
 
 def filter_movies_by_title(filter):
@@ -263,6 +265,8 @@ def extract_themes(main_theme, alt_themes):
 def clear_empty_filters(filters):
     for filter in list(filters.keys()):
         if "values" in filters[filter] and (not filters[filter]["values"] or filters[filter]["values"] == [''] ):
+            del filters[filter]
+        elif "max" in filters[filter] and (not filters[filter]["max"] and not filters[filter]["max"]):
             del filters[filter]
 
 
@@ -470,10 +474,10 @@ def main():
         # "genre": {
         #     "values": ["Comedy", "Family", "Horror", "Romance", "Drama"]
         # },
-        "imdb_score": {
-            "min": 5.9,
-            "max": 6.3
-        },
+        # "imdb_score": {
+        #     "min": 5.9,
+        #     "max": 6.3
+        # },
         # 'compression': {
         #     "values": ['JPEG (Baseline)']
         # },
@@ -489,18 +493,18 @@ def main():
         # 'endianness': {
         #     "values": ['Big endian']
         # },
-        "bits_per_pixel": {
-            "min": 24,
-            "max": 24
-        },
-        "width": {
-            "min": 182,
-            "max": 182
-        },
-        "height": {
-            "min": 268,
-            "max": 268
-        },
+        # "bits_per_pixel": {
+        #     "min": 24,
+        #     "max": 24
+        # },
+        # "width": {
+        #     "min": 182,
+        #     "max": 182
+        # },
+        # "height": {
+        #     "min": 268,
+        #     "max": 268
+        # },
         # "clothing": {
         #     "values": ["jacket"]
         # },
@@ -510,9 +514,9 @@ def main():
         # "emotion": {
         #     "values": ["neutral", "happiness"]
         # },
-        # "theme": {
-        #     "values": ["mag", "Fire engine"]
-        # },
+        "theme": {
+            "values": ["Pulp"]
+        },
     }
     # get_all_images()
     # get_all_clothing(images)

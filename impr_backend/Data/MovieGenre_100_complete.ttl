@@ -1,0 +1,2811 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix impr: <http://example.org/impr/> .
+@prefix ns1: <https://developer.adobe.com/xmp/docs/XMPNamespaces/exif/> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.imdb.com/title/tt101329> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.5"^^xsd:float ] ;
+    schema:genre "Adventure",
+        "Animation",
+        "Family" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BZmUyOTE4YmItN2E0Zi00M2ViLWIxMTctMmZhMDRhMDZhOWZlXkEyXkFqcGdeQXVyNjExODE1MDc@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "An American Tail: Fievel Goes West (1991)" .
+
+<http://www.imdb.com/title/tt103994> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.2"^^xsd:float ] ;
+    schema:genre "Drama",
+        "Romance" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTUxNDI3MTIyMF5BMl5BanBnXkFtZTcwMzg5NDEzMQ@@._V1_UY268_CR1,0,182,268_AL_.jpg> ;
+    schema:name "Como agua para chocolate (1992)" .
+
+<http://www.imdb.com/title/tt105128> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "4.8"^^xsd:float ] ;
+    schema:genre "Fantasy",
+        "Horror" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMDczNjdmYjEtN2QyYi00MTIxLTgyNmUtNzRkNzVlM2UyYTQwXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY268_CR1,0,182,268_AL_.jpg> ;
+    schema:name "Pet Sematary II (1992)" .
+
+<http://www.imdb.com/title/tt1055292> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.6"^^xsd:float ] ;
+    schema:genre "Comedy",
+        "Drama",
+        "Romance" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTc1OTQzNzE0Nl5BMl5BanBnXkFtZTcwNDU4NDk3Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Life as We Know It (2010)" .
+
+<http://www.imdb.com/title/tt106175> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.2"^^xsd:float ] ;
+    schema:genre "Drama",
+        "Mystery",
+        "Thriller" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTU0ODczMTA5MF5BMl5BanBnXkFtZTcwMzM1ODAzMQ@@._V1_UY268_CR2,0,182,268_AL_.jpg> ;
+    schema:name "Wild Palms" .
+
+<http://www.imdb.com/title/tt106521> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "3.5"^^xsd:float ] ;
+    schema:genre "Horror",
+        "Sci-Fi" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTgxMTEwNTcyMF5BMl5BanBnXkFtZTcwMTg1NTIyMQ@@._V1_UY268_CR4,0,182,268_AL_.jpg> ;
+    schema:name "Carnosaur (1993)" .
+
+<http://www.imdb.com/title/tt107614> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.9"^^xsd:float ] ;
+    schema:genre "Comedy",
+        "Drama",
+        "Family" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjExMDUzODE1N15BMl5BanBnXkFtZTgwNTU5NTYxMTE@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Mrs. Doubtfire (1993)" .
+
+<http://www.imdb.com/title/tt109402> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.8"^^xsd:float ] ;
+    schema:genre "Action",
+        "Adventure",
+        "Comedy" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTYyMTU2MDk3MF5BMl5BanBnXkFtZTcwNjAxNTAzMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg> ;
+    schema:name "The Chase (1994)" .
+
+<http://www.imdb.com/title/tt113112> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.1"^^xsd:float ] ;
+    schema:genre "Comedy",
+        "Family",
+        "Fantasy" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BYWMxMDM1NTEtMWFlZi00YTY5LWJmZjItNGI0MTBmY2E1YmE4XkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Freaky Friday (1995)" .
+
+<http://www.imdb.com/title/tt114753> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.3"^^xsd:float ] ;
+    schema:genre "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BOGE1NmM0MjYtZmJjYS00ODI5LWI0MjgtOGM2MTY3ZmIyNDZkXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Two Bits (1995)" .
+
+<http://www.imdb.com/title/tt114924> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.7"^^xsd:float ] ;
+    schema:genre "Comedy",
+        "Drama",
+        "Romance" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTU5NjU4NDUzMl5BMl5BanBnXkFtZTgwMjc4NDgzMTE@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "While You Were Sleeping (1995)" .
+
+<http://www.imdb.com/title/tt117547> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.0"^^xsd:float ] ;
+    schema:genre "Adventure",
+        "Drama",
+        "History" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTgxMDA4OTE0N15BMl5BanBnXkFtZTcwODI1NjAzMQ@@._V1_UY268_CR19,0,182,268_AL_.jpg> ;
+    schema:name "Samson and Delilah (1996)" .
+
+<http://www.imdb.com/title/tt117608> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.7"^^xsd:float ] ;
+    schema:genre "Comedy" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BN2M5NmJlNzEtYjkyNi00NTY0LWIzMGQtMGZmZjRjY2I3NzgyXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UY268_CR5,0,182,268_AL_.jpg> ;
+    schema:name "Sgt. Bilko (1996)" .
+
+<http://www.imdb.com/title/tt119908> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "4.8"^^xsd:float ] ;
+    schema:genre "Drama",
+        "Thriller" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BM2FkYzU4NjQtY2ZkNy00ODczLWEzZDQtNGYxYzBiYWFlMDdlXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Poison Ivy: The New Seduction (1997)" .
+
+<http://www.imdb.com/title/tt120844> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.4"^^xsd:float ] ;
+    schema:genre "Action",
+        "Adventure",
+        "Sci-Fi" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BNWEzZDI0NjEtY2FkMC00ZjQwLWI2YzgtZDEyMzMwZmRlZDlhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Star Trek: Insurrection (1998)" .
+
+<http://www.imdb.com/title/tt1290082> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.3"^^xsd:float ] ;
+    schema:genre "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BNzQyNjMzMjkxNF5BMl5BanBnXkFtZTcwNzg5MjQyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Lebanon, Pa. (2010)" .
+
+<http://www.imdb.com/title/tt1334536> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "4.4"^^xsd:float ] ;
+    schema:genre "Horror" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjE3ODM2OTY0Nl5BMl5BanBnXkFtZTcwNDI1NTk5Mw@@._V1_UY268_CR3,0,182,268_AL_.jpg> ;
+    schema:name "House of Bones (2010)" .
+
+<http://www.imdb.com/title/tt1365471> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "3.8"^^xsd:float ] ;
+    schema:genre "Comedy" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTc3Mjg0NjY2NV5BMl5BanBnXkFtZTcwMDkxNTU3Mg@@._V1_UY268_CR6,0,182,268_AL_.jpg> ;
+    schema:name "The Christmas Party (2009)" .
+
+<http://www.imdb.com/title/tt13688> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.7"^^xsd:float ] ;
+    schema:genre "Drama",
+        "Family",
+        "Fantasy" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BN2M2NGIyMDUtY2Q4Ni00M2UyLWI0ZjEtYmI3MTM0MjJiZWJmXkEyXkFqcGdeQXVyNjU2OTUyODc@._V1_UY268_CR3,0,182,268_AL_.jpg> ;
+    schema:name "The Toll of the Sea (1922)" .
+
+<http://www.imdb.com/title/tt138317> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.5"^^xsd:float ] ;
+    schema:genre "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BNWQ5MWY3YmQtMjk4NC00YTM2LTk2MmItNzgyYzdhMzZjY2U0XkEyXkFqcGdeQXVyNTYyNzQ2MjY@._V1_UY268_CR7,0,182,268_AL_.jpg> ;
+    schema:name "Batch '81 (1982)" .
+
+<http://www.imdb.com/title/tt1386741> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.0"^^xsd:float ] ;
+    schema:genre "Crime",
+        "Drama",
+        "Mystery" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BZjg2OWJiYTYtY2UyNy00NTFlLTg2NGYtM2VhNjBjNWI0ZTY5XkEyXkFqcGdeQXVyMTk0NDExMTM@._V1_UY268_CR2,0,182,268_AL_.jpg> ;
+    schema:name "Las viudas de los jueves (2009)" .
+
+<http://www.imdb.com/title/tt139470> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.7"^^xsd:float ] ;
+    schema:genre "Action",
+        "Drama",
+        "Thriller" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BNGY4NWQ5OTQtNzE2Ny00MDQ3LWFkZDQtMmZhZDliZWQzZDJhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_UY268_CR12,0,182,268_AL_.jpg> ;
+    schema:name "Money Play$ (1998)" .
+
+<http://www.imdb.com/title/tt1565441> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "3.1"^^xsd:float ] ;
+    schema:genre "Horror",
+        "Sci-Fi",
+        "Thriller" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTk4NzUxMzQ3N15BMl5BanBnXkFtZTcwOTg2MTk1NQ@@._V1_UY268_CR4,0,182,268_AL_.jpg> ;
+    schema:name "The Dead and the Damned (2011)" .
+
+<http://www.imdb.com/title/tt1626135> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "3.7"^^xsd:float ] ;
+    schema:genre "Comedy" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTg4OTQ0NTcxOF5BMl5BanBnXkFtZTcwOTI5ODY3Ng@@._V1_UY268_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Balls to the Wall (2011)" .
+
+<http://www.imdb.com/title/tt1626146> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.0"^^xsd:float ] ;
+    schema:genre "Adventure",
+        "Comedy",
+        "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BNTAzNTIyNDYzNV5BMl5BanBnXkFtZTgwNDg1NjYyMjE@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Hector and the Search for Happiness (2014)" .
+
+<http://www.imdb.com/title/tt1703919> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.2"^^xsd:float ] ;
+    schema:genre "Drama",
+        "Mystery",
+        "Romance" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTU3NzE0NTIzMV5BMl5BanBnXkFtZTcwOTkyNjc3Mw@@._V1_UY268_CR3,0,182,268_AL_.jpg> ;
+    schema:name "Pulsar (2010)" .
+
+<http://www.imdb.com/title/tt1730704> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "3.8"^^xsd:float ] ;
+    schema:genre "Comedy" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTk2ODY5NjMyOV5BMl5BanBnXkFtZTcwNTk1MTIwNA@@._V1_UY268_CR3,0,182,268_AL_.jpg> ;
+    schema:name "Milf (2010)" .
+
+<http://www.imdb.com/title/tt1731697> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.1"^^xsd:float ] ;
+    schema:genre "Horror",
+        "Thriller" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjA2NTc5Njc4MV5BMl5BanBnXkFtZTcwNTYzMTcwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "The Lords of Salem (2012)" .
+
+<http://www.imdb.com/title/tt1863201> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.1"^^xsd:float ] ;
+    schema:genre "Horror" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjAwODcyMTM1Ml5BMl5BanBnXkFtZTcwNTk1NjM1Nw@@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Dark Circles (2013)" .
+
+<http://www.imdb.com/title/tt1924273> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.4"^^xsd:float ] ;
+    schema:genre "Adventure",
+        "Comedy",
+        "Fantasy" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ2NDQ2OTAzNV5BMl5BanBnXkFtZTgwNzA3MTM5MDE@._V1_UY268_CR4,0,182,268_AL_.jpg> ;
+    schema:name "PromociÃÂÃÂ_n fantasma (2012)" .
+
+<http://www.imdb.com/title/tt192745> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.8"^^xsd:float ] ;
+    schema:genre "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTIyMTE5NTI5MF5BMl5BanBnXkFtZTcwNTI5NDgxMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg> ;
+    schema:name "Life is to Whistle (1998)" .
+
+<http://www.imdb.com/title/tt1941668> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "4.7"^^xsd:float ] ;
+    schema:genre "Drama",
+        "History",
+        "War" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTAxOTk4NDgwNzBeQTJeQWpwZ15BbWU4MDgzMjc1MTIx._V1_UY268_CR4,0,182,268_AL_.jpg> ;
+    schema:name "Taistelu NÃÂÃÂ_silinnasta 1918 (2012)" .
+
+<http://www.imdb.com/title/tt1966465> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.2"^^xsd:float ] ;
+    schema:genre "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxMzc0MDQyM15BMl5BanBnXkFtZTcwMDQ2Njc1OA@@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Hell and Mr. Fudge (2012)" .
+
+<http://www.imdb.com/title/tt1996223> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.7"^^xsd:float ] ;
+    schema:genre "Animation",
+        "Biography",
+        "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BZDY2MGRmZDAtM2Q3Ni00ZTg1LWFkYWMtNTViODBjOGM0NTI4XkEyXkFqcGdeQXVyNDgxMDU4NTU@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Crulic - drumul spre dincolo (2011)" .
+
+<http://www.imdb.com/title/tt209263> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "3.3"^^xsd:float ] ;
+    schema:genre "Drama",
+        "Romance",
+        "Thriller" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxMDk0MjgyM15BMl5BanBnXkFtZTcwMzUzNzcyMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Pyaar Koi Khel Nahin (1999)" .
+
+<http://www.imdb.com/title/tt2093997> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.9"^^xsd:float ] ;
+    schema:genre "Animation",
+        "Drama",
+        "Short" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BY2YxOTYwZDMtM2VjNS00NzYyLTkwMWMtOGUxOTI4M2RlNWM4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjQyNzYxNDI@._V1_UY268_CR147,0,182,268_AL_.jpg> ;
+    schema:name "From Dad to Son (2012)" .
+
+<http://www.imdb.com/title/tt218112> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.4"^^xsd:float ] ;
+    schema:genre "Comedy" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTI0NzU4ODAyOV5BMl5BanBnXkFtZTcwMjI3NzEzMQ@@._V1_UY268_CR2,0,182,268_AL_.jpg> ;
+    schema:name "The Closer You Get (2000)" .
+
+<http://www.imdb.com/title/tt221799> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.9"^^xsd:float ] ;
+    schema:genre "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjE0Mzk2MTkxNV5BMl5BanBnXkFtZTcwOTE4MDYyMQ@@._V1_UY268_CR0,0,182,268_AL_.jpg> ;
+    schema:name "An American Rhapsody (2001)" .
+
+<http://www.imdb.com/title/tt2247566> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.9"^^xsd:float ] ;
+    schema:genre "Biography",
+        "Drama",
+        "History" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjA1NTgyMDM3Ml5BMl5BanBnXkFtZTgwMjg5NjMwNzE@._V1_UY268_CR9,0,182,268_AL_.jpg> ;
+    schema:name "Kano (2014)" .
+
+<http://www.imdb.com/title/tt2359381> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "4.8"^^xsd:float ] ;
+    schema:genre "Comedy",
+        "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BNzQxNDkxMjAwOV5BMl5BanBnXkFtZTgwMTE0NDE2MjE@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Days and Nights (2014)" .
+
+<http://www.imdb.com/title/tt24886> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.2"^^xsd:float ] ;
+    schema:genre "Animation",
+        "Comedy",
+        "Family" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjNhY2I5ZjQtN2NlNC00ZDkwLTg2Y2QtM2NmYzY3NTIxMzdjXkEyXkFqcGdeQXVyMDMxMjQwMw@@._V1_UY268_CR8,0,182,268_AL_.jpg> ;
+    schema:name "The Big Bad Wolf (1934)" .
+
+<http://www.imdb.com/title/tt2616880> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.7"^^xsd:float ] ;
+    schema:genre "Animation",
+        "Family",
+        "Short" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTUxMDczNTI3OF5BMl5BanBnXkFtZTcwNjY3MTExOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "The Blue Umbrella (2013)" .
+
+<http://www.imdb.com/title/tt2698966> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.1"^^xsd:float ] ;
+    schema:genre "Drama",
+        "Mystery",
+        "Thriller" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwNzQ2OTM0NF5BMl5BanBnXkFtZTgwODA2Mzk0OTE@._V1_UY268_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Oliver's Deal (2015)" .
+
+<http://www.imdb.com/title/tt275230> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.7"^^xsd:float ] ;
+    schema:genre "Action",
+        "Animation",
+        "Horror" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTk4MjA0NTQ1N15BMl5BanBnXkFtZTYwMzEyMjE5._V1_UY268_CR4,0,182,268_AL_.jpg> ;
+    schema:name "Blood: The Last Vampire (2000)" .
+
+<http://www.imdb.com/title/tt275309> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.7"^^xsd:float ] ;
+    schema:genre "Documentary",
+        "Sport" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTM4NTEwMTg5M15BMl5BanBnXkFtZTcwNzQ4NTgyMQ@@._V1_UY268_CR5,0,182,268_AL_.jpg> ;
+    schema:name "Dogtown and Z-Boys (2001)" .
+
+<http://www.imdb.com/title/tt276816> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.2"^^xsd:float ] ;
+    schema:genre "Horror",
+        "Mystery",
+        "Thriller" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BNTUxOGY0MTMtOWNkZS00NThlLWIzZDktMWJmMjQ4N2IyNWY4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Below (2002)" .
+
+<http://www.imdb.com/title/tt277185> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.9"^^xsd:float ] ;
+    schema:genre "Documentary" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTA4ODA3MjE0NjNeQTJeQWpwZ15BbWU3MDQyMjY5MTE@._V1_UY268_CR3,0,182,268_AL_.jpg> ;
+    schema:name "New York in the 50's (2000)" .
+
+<http://www.imdb.com/title/tt2820466> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "8.1"^^xsd:float ] ;
+    schema:genre "Action",
+        "Adventure",
+        "Animation" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTgwNTljYzgtOTU3ZC00ZjhhLTk0YzItY2RiMWU0MGZlNzFjL2ltYWdlXkEyXkFqcGdeQXVyNDQ2MTMzODA@._V1_UY268_CR2,0,182,268_AL_.jpg> ;
+    schema:name "Justice League: The Flashpoint Paradox (2013)" .
+
+<http://www.imdb.com/title/tt284277> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.7"^^xsd:float ] ;
+    schema:genre "Comedy",
+        "Drama",
+        "Romance" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTMwNDM3MTQyOV5BMl5BanBnXkFtZTcwOTc4MDkxMQ@@._V1_UY268_CR4,0,182,268_AL_.jpg> ;
+    schema:name "Lundi matin (2002)" .
+
+<http://www.imdb.com/title/tt2893780> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.3"^^xsd:float ] ;
+    schema:genre "Action",
+        "Crime",
+        "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTgwOTg3MTI4MF5BMl5BanBnXkFtZTcwMTMzMDI1OQ@@._V1_UY268_CR4,0,182,268_AL_.jpg> ;
+    schema:name "Convict (2014)" .
+
+<http://www.imdb.com/title/tt2924336> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.3"^^xsd:float ] ;
+    schema:genre "Drama",
+        "Thriller" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjMwMDQzMzM5Ml5BMl5BanBnXkFtZTgwNzQyNzE4MDE@._V1_UY268_CR4,0,182,268_AL_.jpg> ;
+    schema:name "Losejas (2013)" .
+
+<http://www.imdb.com/title/tt2925642> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.1"^^xsd:float ] ;
+    schema:genre "Crime",
+        "Documentary",
+        "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxNTI0OTUyMl5BMl5BanBnXkFtZTgwNDc2Mjk3MDE@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Kids for Cash (2013)" .
+
+<http://www.imdb.com/title/tt31260> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.4"^^xsd:float ] ;
+    schema:genre "Crime",
+        "Drama",
+        "Film-Noir" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwNTI4NDM5N15BMl5BanBnXkFtZTcwNzMxMjYyNw@@._V1_UY268_CR91,0,182,268_AL_.jpg> ;
+    schema:name "Each Dawn I Die (1939)" .
+
+<http://www.imdb.com/title/tt31999> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.7"^^xsd:float ] ;
+    schema:genre "Drama",
+        "Musical" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTg5MjQ1NTE0MV5BMl5BanBnXkFtZTcwMTc5NDcxMw@@._V1_UY268_CR2,0,182,268_AL_.jpg> ;
+    schema:name "Swing! (1938)" .
+
+<http://www.imdb.com/title/tt323551> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.2"^^xsd:float ] ;
+    schema:genre "Action",
+        "Biography",
+        "Crime" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BYzA3NGQ3NDMtNmU5NS00M2MwLWJmN2QtMWFhYzhkZmYzOTdmXkEyXkFqcGdeQXVyMzU4NjQ5Nzg@._V1_UY268_CR9,0,182,268_AL_.jpg> ;
+    schema:name "Pahat pojat (2003)" .
+
+<http://www.imdb.com/title/tt3399042> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.6"^^xsd:float ] ;
+    schema:genre "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BOWU0YjFmY2EtOWU3MC00YjQ2LTg0MjAtODVhNzk3YzI3YjljXkEyXkFqcGdeQXVyMjcyNjk5Mg@@._V1_UY268_CR8,0,182,268_AL_.jpg> ;
+    schema:name "Young Tiger (2014)" .
+
+<http://www.imdb.com/title/tt3421270> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "3.3"^^xsd:float ] ;
+    schema:genre "Action",
+        "Crime",
+        "Thriller" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTY5NzE1NjY2N15BMl5BanBnXkFtZTgwNTU5Mjk4MTE@._V1_UY268_CR4,0,182,268_AL_.jpg> ;
+    schema:name "Asian School Girls (2014)" .
+
+<http://www.imdb.com/title/tt3486542> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.5"^^xsd:float ] ;
+    schema:genre "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BNzE5MTk2NzM1Ml5BMl5BanBnXkFtZTgwODYzMTgyNzE@._V1_UY268_CR1,0,182,268_AL_.jpg> ;
+    schema:name "Mediterranea (2015)" .
+
+<http://www.imdb.com/title/tt3505712> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.7"^^xsd:float ] ;
+    schema:genre "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjE5MDA2Njg5N15BMl5BanBnXkFtZTgwNDI0ODUwNjE@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Time Out of Mind (2014)" .
+
+<http://www.imdb.com/title/tt3644202> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.6"^^xsd:float ] ;
+    schema:genre "Family" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BYmUyM2NlMGMtOTBjYS00ZDM5LTlmYzctMGY4YWM2NDhkYzkxXkEyXkFqcGdeQXVyMTIxMzMzMzE@._V1_UY268_CR3,0,182,268_AL_.jpg> ;
+    schema:name "Risto RÃÂÃÂ_ppÃÂÃÂ_ÃÂÃÂ_jÃÂÃÂ_ ja Sevillan saituri (2015)" .
+
+<http://www.imdb.com/title/tt366532> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.5"^^xsd:float ] ;
+    schema:genre "Comedy" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTM2NTI2NTY0NF5BMl5BanBnXkFtZTcwMTc0NjcyMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg> ;
+    schema:name "La grande sÃÂÃÂ­ÃÂÃÂ©duction (2003)" .
+
+<http://www.imdb.com/title/tt37008> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "8.1"^^xsd:float ] ;
+    schema:genre "Crime",
+        "Drama",
+        "Film-Noir" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTU5MjQwMzk1NF5BMl5BanBnXkFtZTcwOTA5NDgyMw@@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Laura (1944)" .
+
+<http://www.imdb.com/title/tt3814316> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.7"^^xsd:float ] ;
+    schema:genre "Comedy" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMmNlMjBjYzgtYTQzMi00MDAzLWE4ZjgtYTIzMDBlODUwYmNlXkEyXkFqcGdeQXVyNDc4MDgzMzY@._V1_UY268_CR7,0,182,268_AL_.jpg> ;
+    schema:name "Le nouveau (2015)" .
+
+<http://www.imdb.com/title/tt383028> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.5"^^xsd:float ] ;
+    schema:genre "Comedy",
+        "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjA0MjIyOTI3MF5BMl5BanBnXkFtZTcwODM5NTY5MQ@@._V1_UY268_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Synecdoche, New York (2008)" .
+
+<http://www.imdb.com/title/tt38390> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.4"^^xsd:float ] ;
+    schema:genre "Biography",
+        "Comedy",
+        "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BY2Q3Yzk5YjYtN2EyYi00MWM2LTgwNGItNDQ5ZTgzNjJlNDhhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjUxODE0MDY@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Caesar and Cleopatra (1945)" .
+
+<http://www.imdb.com/title/tt3895884> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.1"^^xsd:float ] ;
+    schema:genre "Comedy",
+        "Sport" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTU2NTE0NzM5OV5BMl5BanBnXkFtZTgwMDYwMDc1NjE@._V1_UY268_CR9,0,182,268_AL_.jpg> ;
+    schema:name "7 Days in Hell (2015)" .
+
+<http://www.imdb.com/title/tt403217> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.8"^^xsd:float ] ;
+    schema:genre "Biography",
+        "Drama",
+        "Music" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BY2VmNDNjZTEtYmZiYi00NDNhLTk2ZmQtNGRhZTdhMzhkZGNlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Last Days (2005)" .
+
+<http://www.imdb.com/title/tt425326> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.1"^^xsd:float ] ;
+    schema:genre "Comedy",
+        "Drama",
+        "Romance" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTI0MzU5NTEwNF5BMl5BanBnXkFtZTcwNzIxMDU1MQ@@._V1_UY268_CR7,0,182,268_AL_.jpg> ;
+    schema:name "Outsourced (2006)" .
+
+<http://www.imdb.com/title/tt436854> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.1"^^xsd:float ] ;
+    schema:genre "Comedy",
+        "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTY0NjM5MDk5N15BMl5BanBnXkFtZTcwOTQ5MjQ0Mg@@._V1_UY268_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Tulpan (2008)" .
+
+<http://www.imdb.com/title/tt45719> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.1"^^xsd:float ] ;
+    schema:genre "Short" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMzRmYzVjNGQtZjZlOS00ODBiLTg0ZDktMmRhMTIyYzYyNzJmXkEyXkFqcGdeQXVyMzMyMjAzNg@@._V1_UY268_CR3,0,182,268_AL_.jpg> ;
+    schema:name "Eaux d'artifice (1953)" .
+
+<http://www.imdb.com/title/tt4699624> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "2.6"^^xsd:float ] ;
+    schema:genre "Action",
+        "Sci-Fi",
+        "Thriller" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ3MTQ4MTkzNV5BMl5BanBnXkFtZTgwMzM2Mjg2OTE@._V1_UY268_CR2,0,182,268_AL_.jpg> ;
+    schema:name "KillerSaurus (2015)" .
+
+<http://www.imdb.com/title/tt473074> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.5"^^xsd:float ] ;
+    schema:genre "Drama",
+        "Romance",
+        "Sport" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ4MTA3MzI5NV5BMl5BanBnXkFtZTcwNTIxNDMzMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "The Gymnast (2006)" .
+
+<http://www.imdb.com/title/tt484562> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "4.8"^^xsd:float ] ;
+    schema:genre "Adventure",
+        "Drama",
+        "Family" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTI4ODI5MzEwM15BMl5BanBnXkFtZTYwMTg4Njk3._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "The Seeker: The Dark Is Rising (2007)" .
+
+<http://www.imdb.com/title/tt485851> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.9"^^xsd:float ] ;
+    schema:genre "Crime",
+        "Drama",
+        "Thriller" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTgyMjgwNjkxOV5BMl5BanBnXkFtZTcwNDU2MzU1MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "The Air I Breathe (2007)" .
+
+<http://www.imdb.com/title/tt5031014> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.7"^^xsd:float ] ;
+    schema:genre "Comedy",
+        "Drama",
+        "Romance" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjE1NjI1OTc3NV5BMl5BanBnXkFtZTgwNDM4MDEzNzE@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Ice Sculpture Christmas (2015)" .
+
+<http://www.imdb.com/title/tt5237552> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.2"^^xsd:float ] ;
+    schema:genre "Comedy",
+        "Drama",
+        "Family" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTNlYjI0YzMtMThmNy00ZDJjLWE4YzctYTNhODRmOTFjODc1XkEyXkFqcGdeQXVyMjAzMjcxNTE@._V1_UY268_CR0,0,182,268_AL_.jpg> ;
+    schema:name "A Gift Wrapped Christmas (2015)" .
+
+<http://www.imdb.com/title/tt55294> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "3.3"^^xsd:float ] ;
+    schema:genre "Action",
+        "Adventure",
+        "Sci-Fi" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTMyODY5MTU5M15BMl5BanBnXkFtZTcwMDcxMTM4NA@@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "The Phantom Planet (1961)" .
+
+<http://www.imdb.com/title/tt56048> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.2"^^xsd:float ] ;
+    schema:genre "Biography",
+        "Comedy",
+        "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BM2FiYWQzOGItZjBlNS00ZjMyLWEwZjAtYzMwYTlmNGI1MzZlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Gypsy (1962)" .
+
+<http://www.imdb.com/title/tt5988898> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.4"^^xsd:float ] ;
+    schema:genre "Drama",
+        "History",
+        "Romance" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BOGFlNGI1OGQtMzA3Yy00YjE4LTgzMmQtZDE0MzdmM2VlNDcyXkEyXkFqcGdeQXVyMjg5MjUyNQ@@._V1_UY268_CR4,0,182,268_AL_.jpg> ;
+    schema:name "Seneca's Day (2016)" .
+
+<http://www.imdb.com/title/tt64897> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.3"^^xsd:float ] ;
+    schema:genre "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTkxNzUzOTAzNl5BMl5BanBnXkFtZTcwNzg2MDUxMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Riten (1969)" .
+
+<http://www.imdb.com/title/tt67952> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.7"^^xsd:float ] ;
+    schema:genre "Crime",
+        "Drama",
+        "Thriller" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTgwNjk1MjgyNV5BMl5BanBnXkFtZTcwODk5MjcxMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Villain (1971)" .
+
+<http://www.imdb.com/title/tt68179> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.8"^^xsd:float ] ;
+    schema:genre "Crime",
+        "Drama",
+        "Thriller" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjk5ZWI2Y2UtN2E2NC00ZmI0LWIxYjYtMjk2NmYwYWFlMzcwXkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_UY268_CR10,0,182,268_AL_.jpg> ;
+    schema:name "Afyon oppio (1972)" .
+
+<http://www.imdb.com/title/tt68870> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.5"^^xsd:float ] ;
+    schema:genre "Western" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTI1NjEwMTE4MF5BMl5BanBnXkFtZTcwOTkxOTAyMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "The Man Called Noon (1973)" .
+
+<http://www.imdb.com/title/tt69031> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.2"^^xsd:float ] ;
+    schema:genre "Comedy",
+        "Family",
+        "Sci-Fi" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3NDg0Mjg0MV5BMl5BanBnXkFtZTcwMDgyMzUyMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg> ;
+    schema:name "Now You See Him, Now You Don't (1972)" .
+
+<http://www.imdb.com/title/tt70689> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.7"^^xsd:float ] ;
+    schema:genre "Drama",
+        "Mystery" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTIwNTIzOTE2OF5BMl5BanBnXkFtZTYwMjE1OTc5._V1_UY268_CR4,0,182,268_AL_.jpg> ;
+    schema:name "Siddhartha (1972)" .
+
+<http://www.imdb.com/title/tt72852> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.7"^^xsd:float ] ;
+    schema:genre "Action",
+        "Drama",
+        "Thriller" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyNzIyMjE3NF5BMl5BanBnXkFtZTcwMzQ4NjYxNA@@._V1_UY268_CR43,0,182,268_AL_.jpg> ;
+    schema:name "The Deadly Tower (1975)" .
+
+<http://www.imdb.com/title/tt75788> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.3"^^xsd:float ] ;
+    schema:genre "Documentary" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjA4NDQyMTI3Nl5BMl5BanBnXkFtZTcwOTAyMzAwMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Bruce Lee, the Legend (1984)" .
+
+<http://www.imdb.com/title/tt76374> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.4"^^xsd:float ] ;
+    schema:genre "Adventure",
+        "Crime",
+        "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTc5MjY5MjA0Nl5BMl5BanBnXkFtZTcwNTQ4MzQyMQ@@._V1_UY268_CR1,0,182,268_AL_.jpg> ;
+    schema:name "MatinÃÂÃÂÃÂÃÂ©e (1977)" .
+
+<http://www.imdb.com/title/tt81693> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "2.1"^^xsd:float ] ;
+    schema:genre "Action",
+        "Adventure",
+        "Fantasy" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BZGE0Zjk2NjQtMDdmOC00ZDZmLTkwZDEtM2ExODA2MzZiMTBlXkEyXkFqcGdeQXVyNjA3OTI5MjA@._V1_UY268_CR4,0,182,268_AL_.jpg> ;
+    schema:name "The Pumaman (1980)" .
+
+<http://www.imdb.com/title/tt85276> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.8"^^xsd:float ] ;
+    schema:genre "Action",
+        "Drama",
+        "Romance" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BODE0MDE2MTg2M15BMl5BanBnXkFtZTcwNjE2NjgyNA@@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Breathless (1983)" .
+
+<http://www.imdb.com/title/tt88224> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.6"^^xsd:float ] ;
+    schema:genre "Action",
+        "Comedy",
+        "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTg2NDIxMzE3NV5BMl5BanBnXkFtZTcwMjIzMzcyMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg> ;
+    schema:name "Tank (1984)" .
+
+<http://www.imdb.com/title/tt89017> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.9"^^xsd:float ] ;
+    schema:genre "Comedy",
+        "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTIzMzA5NjIzOF5BMl5BanBnXkFtZTYwOTA2NTI5._V1_UY268_CR2,0,182,268_AL_.jpg> ;
+    schema:name "Desperately Seeking Susan (1985)" .
+
+<http://www.imdb.com/title/tt902967> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.3"^^xsd:float ] ;
+    schema:genre "Documentary" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BNTYwMWRlNWItMTBiZi00YmZjLTg4YzItYTIzNDlkOGQ4Y2ZlXkEyXkFqcGdeQXVyMjc1NTg2NTI@._V1_UY268_CR1,0,182,268_AL_.jpg> ;
+    schema:name "The Crimson Wing: Mystery of the Flamingos (2008)" .
+
+<http://www.imdb.com/title/tt909388> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.2"^^xsd:float ] ;
+    schema:genre "Biography",
+        "Drama",
+        "Music" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BODkyMTUzODcyNl5BMl5BanBnXkFtZTcwOTg2MDg5MQ@@._V1_UY268_CR4,0,182,268_AL_.jpg> ;
+    schema:name "Ganes (2007)" .
+
+<http://www.imdb.com/title/tt912592> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.2"^^xsd:float ] ;
+    schema:genre "Documentary",
+        "Family",
+        "Mystery" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMTIyMjY4OTQwNV5BMl5BanBnXkFtZTcwMzE5NjA1MQ@@._V1_UY268_CR0,0,182,268_AL_.jpg> ;
+    schema:name "My Kid Could Paint That (2007)" .
+
+<http://www.imdb.com/title/tt91777> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "5.2"^^xsd:float ] ;
+    schema:genre "Comedy",
+        "Crime" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BNWM0NGQ2ZTctZDNiZi00MzlmLTlhODAtMWQ5Y2Q0YTFjOTcwL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Police Academy 3: Back in Training (1986)" .
+
+<http://www.imdb.com/title/tt950739> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "6.6"^^xsd:float ] ;
+    schema:genre "Action",
+        "Adventure",
+        "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BZGM5NWQwMGUtYTA5My00MjFkLTliN2UtZGJjZjU0Njg3ODZiXkEyXkFqcGdeQXVyNjA3OTI5MjA@._V1_UY268_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Arn: Riket vid vÃÂÃÂ_gens slut (2008)" .
+
+<http://www.imdb.com/title/tt97674> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.6"^^xsd:float ] ;
+    schema:genre "Animation",
+        "Comedy",
+        "Short" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjM0OTkwMzQwMV5BMl5BanBnXkFtZTgwMzIyMDgwMjE@._V1_UX182_CR0,0,182,268_AL_.jpg> ;
+    schema:name "Knick Knack (1989)" .
+
+<http://www.imdb.com/title/tt99729> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "8.2"^^xsd:float ] ;
+    schema:genre "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BOGE0NDY1MzUtNjgyYS00MTE5LTkyMjgtMGQwNmVlMWU1ZmEzXkEyXkFqcGdeQXVyMTAyNTQ0MTk@._V1_UY268_CR3,0,182,268_AL_.jpg> ;
+    schema:name "Hamoun (1990)" .
+
+<http://www.imdb.com/title/tt99857> a schema:Movie ;
+    schema:aggregateRating [ a schema:AggregateRating ;
+            schema:ratingValue "7.0"^^xsd:float ] ;
+    schema:genre "Comedy",
+        "Drama" ;
+    schema:image <https://images-na.ssl-images-amazon.com/images/M/MV5BMjE2OTI2MDU0MF5BMl5BanBnXkFtZTcwNDM1MzcyMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg> ;
+    schema:name "Iron & Silk (1990)" .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BM2FiYWQzOGItZjBlNS00ZjMyLWEwZjAtYzMwYTlmNGI1MzZlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Passe-partout" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BM2FkYzU4NjQtY2ZkNy00ODczLWEzZDQtNGYxYzBiYWFlMDdlXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Face",
+        "Woman" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Magazine" ;
+            skos:altLabel "mag" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMDczNjdmYjEtN2QyYi00MTIxLTgyNmUtNzRkNzVlM2UyYTQwXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY268_CR1,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTA4ODA3MjE0NjNeQTJeQWpwZ15BbWU3MDQyMjY5MTE@._V1_UY268_CR3,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTAxOTk4NDgwNzBeQTJeQWpwZ15BbWU4MDgzMjc1MTIx._V1_UY268_CR4,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "hat",
+        "jacket" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "News magazine" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTI0MzU5NTEwNF5BMl5BanBnXkFtZTcwNzIxMDU1MQ@@._V1_UY268_CR7,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "jacket",
+        "shirt",
+        "trousers" ;
+    impr:containsObject "Person",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTI0NzU4ODAyOV5BMl5BanBnXkFtZTcwMjI3NzEzMQ@@._V1_UY268_CR2,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Person",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Magazine" ;
+            skos:altLabel "mag" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTI1NjEwMTE4MF5BMl5BanBnXkFtZTcwOTkxOTAyMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "hat" ;
+    impr:containsObject "Poster",
+        "Woman" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Spaghetti Western" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "happiness" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTI4ODI5MzEwM15BMl5BanBnXkFtZTYwMTg4Njk3._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTIwNTIzOTE2OF5BMl5BanBnXkFtZTYwMjE1OTc5._V1_UY268_CR4,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Face",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTIyMTE5NTI5MF5BMl5BanBnXkFtZTcwNTI5NDgxMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "hat" ;
+    impr:containsObject "Face",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "News magazine" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTIyMjY4OTQwNV5BMl5BanBnXkFtZTcwMzE5NjA1MQ@@._V1_UY268_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "happiness" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTIzMzA5NjIzOF5BMl5BanBnXkFtZTYwOTA2NTI5._V1_UY268_CR2,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "trousers" ;
+    impr:containsObject "Woman" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Figure skate" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTM2NTI2NTY0NF5BMl5BanBnXkFtZTcwMTc0NjcyMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "jacket" ;
+    impr:containsObject "Clothing",
+        "Man",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Ducking" ;
+            skos:altLabel "duck hunting" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "happiness" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTM4NTEwMTg5M15BMl5BanBnXkFtZTcwNzQ4NTgyMQ@@._V1_UY268_CR5,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Person",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTMwNDM3MTQyOV5BMl5BanBnXkFtZTcwOTc4MDkxMQ@@._V1_UY268_CR4,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "jacket" ;
+    impr:containsObject "Clothing",
+        "Man",
+        "Person" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTMyODY5MTU5M15BMl5BanBnXkFtZTcwMDcxMTM4NA@@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "News magazine" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTNlYjI0YzMtMThmNy00ZDJjLWE4YzctYTNhODRmOTFjODc1XkEyXkFqcGdeQXVyMjAzMjcxNTE@._V1_UY268_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "shirt" ;
+    impr:containsObject "Boy",
+        "Clothing",
+        "Woman" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Slick" ;
+            skos:altLabel "glossy",
+                "slick magazine" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "happiness" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ2NDQ2OTAzNV5BMl5BanBnXkFtZTgwNzA3MTM5MDE@._V1_UY268_CR4,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "shirt" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "happiness" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "happiness" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ3MTQ4MTkzNV5BMl5BanBnXkFtZTgwMzM2Mjg2OTE@._V1_UY268_CR2,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Berserker" ;
+            skos:altLabel "berserk" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ4MTA3MzI5NV5BMl5BanBnXkFtZTcwNTIxNDMzMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Person",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxMzc0MDQyM15BMl5BanBnXkFtZTcwMDQ2Njc1OA@@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Person",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxNTI0OTUyMl5BMl5BanBnXkFtZTgwNDc2Mjk3MDE@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Pier" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTU0ODczMTA5MF5BMl5BanBnXkFtZTcwMzM1ODAzMQ@@._V1_UY268_CR2,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTU2NTE0NzM5OV5BMl5BanBnXkFtZTgwMDYwMDc1NjE@._V1_UY268_CR9,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "hat",
+        "shirt" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "happiness" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTU3NzE0NTIzMV5BMl5BanBnXkFtZTcwOTkyNjc3Mw@@._V1_UY268_CR3,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Person",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTU5MjQwMzk1NF5BMl5BanBnXkFtZTcwOTA5NDgyMw@@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "hat",
+        "shirt" ;
+    impr:containsObject "Poster",
+        "Woman" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTU5NjU4NDUzMl5BMl5BanBnXkFtZTgwMjc4NDgzMTE@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "trousers" ;
+    impr:containsObject "Poster",
+        "Woman" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTUxMDczNTI3OF5BMl5BanBnXkFtZTcwNjY3MTExOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTUxNDI3MTIyMF5BMl5BanBnXkFtZTcwMzg5NDEzMQ@@._V1_UY268_CR1,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyNzIyMjE3NF5BMl5BanBnXkFtZTcwMzQ4NjYxNA@@._V1_UY268_CR43,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTY0NjM5MDk5N15BMl5BanBnXkFtZTcwOTQ5MjQ0Mg@@._V1_UY268_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "jacket" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Magazine" ;
+            skos:altLabel "mag" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTY5NzE1NjY2N15BMl5BanBnXkFtZTgwNTU5Mjk4MTE@._V1_UY268_CR4,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "short pants" ;
+    impr:containsObject "Poster",
+        "Woman" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "News magazine" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwNTI4NDM5N15BMl5BanBnXkFtZTcwNzMxMjYyNw@@._V1_UY268_CR91,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "jacket",
+        "trousers" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxMDk0MjgyM15BMl5BanBnXkFtZTcwMzUzNzcyMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "glasses",
+        "shirt" ;
+    impr:containsObject "Man",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTYyMTU2MDk3MF5BMl5BanBnXkFtZTcwNjAxNTAzMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "shirt" ;
+    impr:containsObject "Face" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTc1OTQzNzE0Nl5BMl5BanBnXkFtZTcwNDU4NDk3Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "short pants" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTc3Mjg0NjY2NV5BMl5BanBnXkFtZTcwMDkxNTU3Mg@@._V1_UY268_CR6,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "hat",
+        "jacket" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Print media" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "happiness" ],
+        [ a schema:Person ;
+            impr:emotion "happiness" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTc5MjY5MjA0Nl5BMl5BanBnXkFtZTcwNTQ4MzQyMQ@@._V1_UY268_CR1,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Spam" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTg2NDIxMzE3NV5BMl5BanBnXkFtZTcwMjIzMzcyMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Man",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Web site" ;
+            skos:altLabel "internet site",
+                "site",
+                "website" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "happiness" ],
+        [ a schema:Person ;
+            impr:emotion "happiness" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTg4OTQ0NTcxOF5BMl5BanBnXkFtZTcwOTI5ODY3Ng@@._V1_UY268_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTg5MjQ1NTE0MV5BMl5BanBnXkFtZTcwMTc5NDcxMw@@._V1_UY268_CR2,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster",
+        "Woman" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Magazine" ;
+            skos:altLabel "mag" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTgwNTljYzgtOTU3ZC00ZjhhLTk0YzItY2RiMWU0MGZlNzFjL2ltYWdlXkEyXkFqcGdeQXVyNDQ2MTMzODA@._V1_UY268_CR2,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Pulp" ;
+            skos:altLabel "pulp magazine" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTgwNjk1MjgyNV5BMl5BanBnXkFtZTcwODk5MjcxMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "shirt" ;
+    impr:containsObject "Face",
+        "Man" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Slick" ;
+            skos:altLabel "glossy",
+                "slick magazine" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTgwOTg3MTI4MF5BMl5BanBnXkFtZTcwMTMzMDI1OQ@@._V1_UY268_CR4,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Man",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Heavyweight" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTgxMDA4OTE0N15BMl5BanBnXkFtZTcwODI1NjAzMQ@@._V1_UY268_CR19,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "glasses" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Print media" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTgxMTEwNTcyMF5BMl5BanBnXkFtZTcwMTg1NTIyMQ@@._V1_UY268_CR4,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Animal" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTgyMjgwNjkxOV5BMl5BanBnXkFtZTcwNDU2MzU1MQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "hat",
+        "jacket" ;
+    impr:containsObject "Butterfly",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Magazine" ;
+            skos:altLabel "mag" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTk2ODY5NjMyOV5BMl5BanBnXkFtZTcwNTk1MTIwNA@@._V1_UY268_CR3,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "shirt" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Skating" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTk4MjA0NTQ1N15BMl5BanBnXkFtZTYwMzEyMjE5._V1_UY268_CR4,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Face",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTk4NzUxMzQ3N15BMl5BanBnXkFtZTcwOTg2MTk1NQ@@._V1_UY268_CR4,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMTkxNzUzOTAzNl5BMl5BanBnXkFtZTcwNzg2MDUxMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjA0MjIyOTI3MF5BMl5BanBnXkFtZTcwODM5NTY5MQ@@._V1_UY268_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Building" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjA1NTgyMDM3Ml5BMl5BanBnXkFtZTgwMjg5NjMwNzE@._V1_UY268_CR9,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "hat",
+        "shirt" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjA2NTc5Njc4MV5BMl5BanBnXkFtZTcwNTYzMTcwOQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Person",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3NDg0Mjg0MV5BMl5BanBnXkFtZTcwMDgyMzUyMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "jacket",
+        "shirt",
+        "trousers" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjA4NDQyMTI3Nl5BMl5BanBnXkFtZTcwOTAyMzAwMQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "shirt" ;
+    impr:containsObject "Man",
+        "Person" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjAwODcyMTM1Ml5BMl5BanBnXkFtZTcwNTk1NjM1Nw@@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "bag" ;
+    impr:containsObject "Bottle" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjE0Mzk2MTkxNV5BMl5BanBnXkFtZTcwOTE4MDYyMQ@@._V1_UY268_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Face" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "happiness" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjE1NjI1OTc3NV5BMl5BanBnXkFtZTgwNDM4MDEzNzE@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "jacket" ;
+    impr:containsObject "Man",
+        "Woman" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "happiness" ],
+        [ a schema:Person ;
+            impr:emotion "happiness" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjE2OTI2MDU0MF5BMl5BanBnXkFtZTcwNDM1MzcyMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "jacket" ;
+    impr:containsObject "Face",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjE3ODM2OTY0Nl5BMl5BanBnXkFtZTcwNDI1NTk5Mw@@._V1_UY268_CR3,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Person",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjE5MDA2Njg5N15BMl5BanBnXkFtZTgwNDI0ODUwNjE@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Clothing",
+        "Person" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwNzQ2OTM0NF5BMl5BanBnXkFtZTgwODA2Mzk0OTE@._V1_UY268_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "shirt",
+        "trousers" ;
+    impr:containsObject "Clothing",
+        "Man" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "happiness" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjExMDUzODE1N15BMl5BanBnXkFtZTgwNTU5NTYxMTE@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "glasses",
+        "shirt" ;
+    impr:containsObject "Woman" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "happiness" ],
+        [ a schema:Person ;
+            impr:emotion "happiness" ],
+        [ a schema:Person ;
+            impr:emotion "happiness" ],
+        [ a schema:Person ;
+            impr:emotion "happiness" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjM0OTkwMzQwMV5BMl5BanBnXkFtZTgwMzIyMDgwMjE@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Toy" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjMwMDQzMzM5Ml5BMl5BanBnXkFtZTgwNzQyNzE4MDE@._V1_UY268_CR4,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjNhY2I5ZjQtN2NlNC00ZDkwLTg2Y2QtM2NmYzY3NTIxMzdjXkEyXkFqcGdeQXVyMDMxMjQwMw@@._V1_UY268_CR8,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Land vehicle" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Map" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMjk5ZWI2Y2UtN2E2NC00ZmI0LWIxYjYtMjk2NmYwYWFlMzcwXkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_UY268_CR10,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Tamarind" ;
+            skos:altLabel "tamarindo" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMmNlMjBjYzgtYTQzMi00MDAzLWE4ZjgtYTIzMDBlODUwYmNlXkEyXkFqcGdeQXVyNDc4MDgzMzY@._V1_UY268_CR7,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "shirt",
+        "trousers" ;
+    impr:containsObject "Jeans" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BMzRmYzVjNGQtZjZlOS00ODBiLTg0ZDktMmRhMTIyYzYyNzJmXkEyXkFqcGdeQXVyMzMyMjAzNg@@._V1_UY268_CR3,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Doorplate" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BN2M2NGIyMDUtY2Q4Ni00M2UyLWI0ZjEtYmI3MTM0MjJiZWJmXkEyXkFqcGdeQXVyNjU2OTUyODc@._V1_UY268_CR3,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "shoe",
+        "trousers" ;
+    impr:containsObject "Person",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BN2M5NmJlNzEtYjkyNi00NTY0LWIzMGQtMGZmZjRjY2I3NzgyXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UY268_CR5,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "jacket" ;
+    impr:containsObject "Clothing",
+        "Person",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Overgarment" ;
+            skos:altLabel "outer garment" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "happiness" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BNGY4NWQ5OTQtNzE2Ny00MDQ3LWFkZDQtMmZhZDliZWQzZDJhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_UY268_CR12,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "shirt" ;
+    impr:containsObject "Face",
+        "Person" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BNTAzNTIyNDYzNV5BMl5BanBnXkFtZTgwNDg1NjYyMjE@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "jacket",
+        "trousers" ;
+    impr:containsObject "Person",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BNTUxOGY0MTMtOWNkZS00NThlLWIzZDktMWJmMjQ4N2IyNWY4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Building" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BNTYwMWRlNWItMTBiZi00YmZjLTg4YzItYTIzNDlkOGQ4Y2ZlXkEyXkFqcGdeQXVyMjc1NTg2NTI@._V1_UY268_CR1,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Bird" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BNWEzZDI0NjEtY2FkMC00ZjQwLWI2YzgtZDEyMzMwZmRlZDlhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Background" ;
+            skos:altLabel "desktop",
+                "screen background" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BNWM0NGQ2ZTctZDNiZi00MzlmLTlhODAtMWQ5Y2Q0YTFjOTcwL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "News magazine" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "happiness" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BNWQ5MWY3YmQtMjk4NC00YTM2LTk2MmItNzgyYzdhMzZjY2U0XkEyXkFqcGdeQXVyNTYyNzQ2MjY@._V1_UY268_CR7,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "bag" ;
+    impr:containsObject "Person" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BNzE5MTk2NzM1Ml5BMl5BanBnXkFtZTgwODYzMTgyNzE@._V1_UY268_CR1,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BNzQxNDkxMjAwOV5BMl5BanBnXkFtZTgwMTE0NDE2MjE@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "glasses" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Web site" ;
+            skos:altLabel "internet site",
+                "site",
+                "website" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BNzQyNjMzMjkxNF5BMl5BanBnXkFtZTcwNzg5MjQyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "shirt" ;
+    impr:containsObject "Car",
+        "Clothing",
+        "Man" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Web site" ;
+            skos:altLabel "internet site",
+                "site",
+                "website" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BODE0MDE2MTg2M15BMl5BanBnXkFtZTcwNjE2NjgyNA@@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "glasses" ;
+    impr:containsObject "Face",
+        "Person",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Magazine" ;
+            skos:altLabel "mag" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BODkyMTUzODcyNl5BMl5BanBnXkFtZTcwOTg2MDg5MQ@@._V1_UY268_CR4,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BOGE0NDY1MzUtNjgyYS00MTE5LTkyMjgtMGQwNmVlMWU1ZmEzXkEyXkFqcGdeQXVyMTAyNTQ0MTk@._V1_UY268_CR3,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "jacket" ;
+    impr:containsObject "Person",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BOGE1NmM0MjYtZmJjYS00ODI5LWI0MjgtOGM2MTY3ZmIyNDZkXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Building" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BOGFlNGI1OGQtMzA3Yy00YjE4LTgzMmQtZDE0MzdmM2VlNDcyXkEyXkFqcGdeQXVyMjg5MjUyNQ@@._V1_UY268_CR4,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "jacket",
+        "trousers" ;
+    impr:containsObject "Face",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BOWU0YjFmY2EtOWU3MC00YjQ2LTg0MjAtODVhNzk3YzI3YjljXkEyXkFqcGdeQXVyMjcyNjk5Mg@@._V1_UY268_CR8,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "glasses" ;
+    impr:containsObject "Face",
+        "Man" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BY2Q3Yzk5YjYtN2EyYi00MWM2LTgwNGItNDQ5ZTgzNjJlNDhhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjUxODE0MDY@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "shirt" ;
+    impr:containsObject "Poster",
+        "Woman" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Print media" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "happiness" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BY2VmNDNjZTEtYmZiYi00NDNhLTk2ZmQtNGRhZTdhMzhkZGNlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "glasses" ;
+    impr:containsObject "Face",
+        "Sunglasses" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BY2YxOTYwZDMtM2VjNS00NzYyLTkwMWMtOGUxOTI4M2RlNWM4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjQyNzYxNDI@._V1_UY268_CR147,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "Grayscale" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 8 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BYWMxMDM1NTEtMWFlZi00YTY5LWJmZjItNGI0MTBmY2E1YmE4XkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "shirt" ;
+    impr:containsObject "Face",
+        "Woman" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "happiness" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BYmUyM2NlMGMtOTBjYS00ZDM5LTlmYzctMGY4YWM2NDhkYzkxXkEyXkFqcGdeQXVyMTIxMzMzMzE@._V1_UY268_CR3,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "dress",
+        "shirt" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "News magazine" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "happiness" ],
+        [ a schema:Person ;
+            impr:emotion "happiness" ],
+        [ a schema:Person ;
+            impr:emotion "happiness" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BYzA3NGQ3NDMtNmU5NS00M2MwLWJmN2QtMWFhYzhkZmYzOTdmXkEyXkFqcGdeQXVyMzU4NjQ5Nzg@._V1_UY268_CR9,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "shirt" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "NSFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BZDY2MGRmZDAtM2Q3Ni00ZTg1LWFkYWMtNTViODBjOGM0NTI4XkEyXkFqcGdeQXVyNDgxMDU4NTU@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "shirt" ;
+    impr:containsObject "Clothing",
+        "Man" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BZGE0Zjk2NjQtMDdmOC00ZDZmLTkwZDEtM2ExODA2MzZiMTBlXkEyXkFqcGdeQXVyNjA3OTI5MjA@._V1_UY268_CR4,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "jacket",
+        "trousers" ;
+    impr:containsObject "Person",
+        "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Pulp" ;
+            skos:altLabel "pulp magazine" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BZGM5NWQwMGUtYTA5My00MjFkLTliN2UtZGJjZjU0Njg3ODZiXkEyXkFqcGdeQXVyNjA3OTI5MjA@._V1_UY268_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "shirt" ;
+    impr:containsObject "Clothing",
+        "Man" ;
+    impr:endianness "Big endian" ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BZjg2OWJiYTYtY2UyNy00NTFlLTg2NGYtM2VhNjBjNWI0ZTY5XkEyXkFqcGdeQXVyMTk0NDExMTM@._V1_UY268_CR2,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsClothing "glasses" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Web site" ;
+            skos:altLabel "internet site",
+                "site",
+                "website" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    foaf:depicts [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ],
+        [ a schema:Person ;
+            impr:emotion "neutral" ] ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
+<https://images-na.ssl-images-amazon.com/images/M/MV5BZmUyOTE4YmItN2E0Zi00M2ViLWIxMTctMmZhMDRhMDZhOWZlXkEyXkFqcGdeQXVyNjExODE1MDc@._V1_UX182_CR0,0,182,268_AL_.jpg> a schema:ImageObject ;
+    impr:compression "JPEG (Baseline)" ;
+    impr:containsObject "Poster" ;
+    impr:endianness "Big endian" ;
+    impr:hasTheme [ a skos:Concept ;
+            impr:mainLabel "Comic book" ] ;
+    impr:pixelFormat "YCbCr" ;
+    dc:format "image/jpeg" ;
+    ns1:CompressedBitsPerPixel 24 ;
+    schema:contentRating "SFW" ;
+    schema:height [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 268 ] ;
+    schema:width [ a schema:QuantitativeValue ;
+            schema:unitCode "E37"^^xsd:ID ;
+            schema:value 182 ] .
+
