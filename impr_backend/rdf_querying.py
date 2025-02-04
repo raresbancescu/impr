@@ -1,8 +1,10 @@
 from rdflib import Graph
 from collections import Counter
+import os
 
+rdf_basepath = os.path.abspath(".")
 g = Graph()
-g.parse("data/MovieGenre_100_complete.ttl", format="turtle")
+g.parse(rdf_basepath + "/Data/MovieGenre_100_complete.ttl", format="turtle")
 
 filter_types = {
     "movie_filters": {
