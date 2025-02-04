@@ -35,7 +35,7 @@ export default function Home() {
         setFiltersLoading(true);
         setMoviesLoading(true);
         try {
-            const response = await axios.get(`https://danutok.pythonanywhere.com/api/initial?${queryParams}`);
+            const response = await axios.get(`https://danutok.pythonanywhere.com/api/filter?${queryParams}`);
             setMovies(response.data.movies);
             setFilters(response.data.filters);
         } catch (e) {
