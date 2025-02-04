@@ -32,8 +32,10 @@ const MovieCard = ({movie}) => {
                     onClick={toggleModal}
                 />
             </div>
-            <div className="flex flex-row justify-between p-4">
-                <p className="text-lg font-semibold">{movie['movie_data']['title']}</p>
+            <div className="flex flex-row justify-between p-4 w-full">
+                <div className="flex flex-row w-full">
+                <p className="text-lg break-words font-semibold w-full">{movie['movie_data']['title']}</p>
+                </div>
                 <button onClick={() => setExpanded(!expanded)}>
                     {expanded ? <ChevronUpIcon className="w-5 h-5"/> : <ChevronDownIcon className="w-5 h-5"/>}
                 </button>
@@ -127,7 +129,6 @@ const MovieCard = ({movie}) => {
                         </div>
                         {modalPosterDataExpanded && <div className="px-6 pb-4">
                             {Object.entries(movie).map(([key, value]) => {
-                                // Exclude 'metadata' and 'movie_data'
                                 if (key === "metadata" || key === "movie_data") return null;
 
                                 const formattedKey = key.replace(/_/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
