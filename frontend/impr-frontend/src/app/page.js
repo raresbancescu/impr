@@ -19,7 +19,7 @@ export default function Home() {
         setFiltersLoading(true);
         setMoviesLoading(true);
         try {
-            const response = await axios.get(`http://localhost:5000/api/initial`);
+            const response = await axios.get(`https://danutok.pythonanywhere.com/api/initial`);
             setFilters(response.data.filters);
             setMovies(response.data.movies);
             console.log(response.data.movies);
@@ -35,7 +35,7 @@ export default function Home() {
         setFiltersLoading(true);
         setMoviesLoading(true);
         try {
-            const response = await axios.get(`http://localhost:5000/api/filter?${queryParams}`);
+            const response = await axios.get(`https://danutok.pythonanywhere.com/api/initial?${queryParams}`);
             setMovies(response.data.movies);
             setFilters(response.data.filters);
         } catch (e) {
